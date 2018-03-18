@@ -1,0 +1,46 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:8.4
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+
+      - run:
+          name: Setup build tools
+          command: |
+            npm config set user 0
+            npm config set unsafe-perm true
+            npm install -g netlify-cli
+
+      - restore_cache:
+          name: Restoring Cache - npm
+          keys:
+            - npm-{{ .Branch }}-{{ checksum "package-lock.json" }}
+            - npm-{{ .Branch }}-
+
+      - run:
+         name: npm install
+         command: npm install
+
+      - save_cache:
+          name: Saving Cache - npm
+          key: npm-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules/
+
+      - run:
+          name: Build public files
+          command: |
+
+      - deploy:
+          name: Hosting Netlify
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              # echo \{\"site_id\":\"${MASTER_SITE_ID}\",\"path\":\"public\"\} >> .netlify
+              # /usr/local/lib/node_modules/netlify-cli/bin/cli.js deploy -t ${NETLIFY_TOKEN}
+            else
+              echo "Not master branch so not deploying"
+            fi
