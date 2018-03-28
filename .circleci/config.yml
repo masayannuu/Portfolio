@@ -10,7 +10,7 @@ jobs:
 
       - run:
           name: Setup build tools
-          command: |
+          command:  |
             npm config set user 0
             npm config set unsafe-perm true
             npm install -g netlify-cli
