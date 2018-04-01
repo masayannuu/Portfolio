@@ -39,6 +39,7 @@ jobs:
       - run:
           name: Build public files
           command: |
+            echo "WIP"
 
       - deploy:
           name: Hosting Netlify
