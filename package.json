@@ -12,6 +12,9 @@
     "build-storybook": "build-storybook",
     "test": "jest"
   },
+  "jest": {
+    "collectCoverage": true
+  },
   "dependencies": {
     "axios": "^0.16.2",
     "bloomer": "^0.6.3",

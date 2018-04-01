@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:8.4
+      - image: node:9.9
 
     working_directory: ~/repo
     steps:
@@ -18,18 +18,23 @@ jobs:
       - restore_cache:
           name: Restoring Cache - npm
           keys:
-            - npm-{{ .Branch }}-{{ checksum "package-lock.json" }}
+            - npm-{{ .Branch }}-{{ checksum "yarn.lock" }}
             - npm-{{ .Branch }}-
 
       - run:
-         name: npm install
-         command: npm install
+         name: yarn install
+         command: yarn install
 
       - save_cache:
           name: Saving Cache - npm
-          key: npm-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          key: npm-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
+
+      - run:
+          name: Run Tests
+          command: |
+            yarn test
 
       - run:
           name: Build public files
@@ -41,6 +46,7 @@ jobs:
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               # echo \{\"site_id\":\"${MASTER_SITE_ID}\",\"path\":\"public\"\} >> .netlify
               # /usr/local/lib/node_modules/netlify-cli/bin/cli.js deploy -t ${NETLIFY_TOKEN}
+              echo "WIP"
             else
               echo "Not master branch so not deploying"
             fi
