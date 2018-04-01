@@ -2,39 +2,42 @@ import axios from 'axios'
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
+import Typekit from 'react-typekit'
+
 export default {
+  preact: true,
   getSiteData: () => ({
-    title: 'React Static',
+    title: 'React Static'
   }),
   getRoutes: async () => {
     const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts')
     return [
       {
         path: '/',
-        component: 'src/containers/Home',
+        component: 'src/containers/Home'
       },
       {
         path: '/about',
-        component: 'src/containers/About',
+        component: 'src/containers/About'
       },
       {
         path: '/blog',
         component: 'src/containers/Blog',
         getData: () => ({
-          posts,
+          posts
         }),
         children: posts.map(post => ({
           path: `/post/${post.id}`,
           component: 'src/containers/Post',
           getData: () => ({
-            post,
-          }),
-        })),
+            post
+          })
+        }))
       },
       {
         is404: true,
-        component: 'src/containers/404',
-      },
+        component: 'src/containers/404'
+      }
     ]
   },
   renderToHtml: (render, Comp, meta) => {
@@ -45,18 +48,21 @@ export default {
   },
   Document: class CustomHtml extends Component {
     render () {
-      const { Html, Head, Body, children, renderMeta } = this.props
+      const {
+        Html, Head, Body, children, renderMeta
+      } = this.props
 
       return (
         <Html>
           <Head>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <Typekit kitId="lyf0hzv" />
             {renderMeta.styleTags}
           </Head>
           <Body>{children}</Body>
         </Html>
       )
     }
-  },
+  }
 }
