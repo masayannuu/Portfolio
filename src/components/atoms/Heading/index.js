@@ -1,4 +1,4 @@
-import Title from './Title'
+import MainTitle from './MainTitle'
 import SubTitle from './SubTitle'
 
-export default { Title, SubTitle }
+export { MainTitle, SubTitle }
