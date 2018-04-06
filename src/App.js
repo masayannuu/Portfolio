@@ -15,7 +15,7 @@ injectGlobal`
 
   p {
     font-feature-settings: 'palt';
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
   }
 
   .wf-loading {
