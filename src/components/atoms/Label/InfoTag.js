@@ -7,6 +7,6 @@ const StyledInfo = styled(Tag)`
   letter-spacing: normal;
 `
 
-const Info = props => <StyledInfo className="is-rounded">{props.children}</StyledInfo>
+const InfoTag = props => <StyledInfo className="is-rounded">{props.children}</StyledInfo>
 
-export default Info
+export default InfoTag

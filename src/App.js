@@ -13,6 +13,11 @@ injectGlobal`
     padding: 0;
   }
 
+  p {
+    font-feature-settings: 'palt';
+    letter-spacing: 0.1em;
+  }
+
   .wf-loading {
     font-family: sans-serif;
    }

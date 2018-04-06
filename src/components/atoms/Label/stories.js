@@ -1,5 +1,5 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import Info from './Info'
+import InfoTag from './InfoTag'
 
-storiesOf('Atoms.Label', module).add('Info', () => <Info>github</Info>)
+storiesOf('Atoms.Label', module).add('InfoTag', () => <InfoTag>github</InfoTag>)
