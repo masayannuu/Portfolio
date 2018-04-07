@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Heading SubTitle Atoms should render SubTitle 1`] = `
-<SubTitle__StyledSubTitle
-  isSize={2}
->
-  subtitle
-</SubTitle__StyledSubTitle>
-`;
