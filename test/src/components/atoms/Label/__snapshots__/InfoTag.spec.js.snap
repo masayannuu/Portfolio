@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label InfoTag Atoms should render InfoTag 1`] = `
+<InfoTag__StyledInfo
+  className="is-rounded"
+>
+  InfoTag
+</InfoTag__StyledInfo>
+`;

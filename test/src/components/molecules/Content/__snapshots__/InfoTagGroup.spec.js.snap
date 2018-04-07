@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content InfoTagGroup Molecules should render InfoTagGroup 1`] = `
+<Field
+  className="is-grouped-multiline"
+  grouped={true}
+>
+  <InfoTagGroup__StyledTitle>
+    Language
+  </InfoTagGroup__StyledTitle>
+  <InfoTagGroup__TagGroupField
+    className="is-grouped-multiline"
+    grouped={true}
+  >
+    <Control
+      as="div"
+      key="Ruby"
+    >
+      <InfoTag
+        key="Ruby"
+      >
+        Ruby
+      </InfoTag>
+    </Control>
+    <Control
+      as="div"
+      key="Js"
+    >
+      <InfoTag
+        key="Js"
+      >
+        Js
+      </InfoTag>
+    </Control>
+    <Control
+      as="div"
+      key="java"
+    >
+      <InfoTag
+        key="java"
+      >
+        java
+      </InfoTag>
+    </Control>
+    <Control
+      as="div"
+      key="C#"
+    >
+      <InfoTag
+        key="C#"
+      >
+        C#
+      </InfoTag>
+    </Control>
+  </InfoTagGroup__TagGroupField>
+</Field>
+`;

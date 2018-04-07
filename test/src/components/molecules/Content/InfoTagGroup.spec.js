@@ -7,9 +7,10 @@ import InfoTagGroup from '../../../../../src/components/molecules/Content/InfoTa
 
 Enzyme.configure({ adapter: new Adapter() })
 
-describe('Heading InfoTagGroup Atoms', () => {
+const tags = ['Ruby', 'Js', 'java', 'C#']
+describe('Content InfoTagGroup Molecules', () => {
   it('should render InfoTagGroup', () => {
-    const wrapper = Enzyme.shallow(<InfoTagGroup>InfoTagGroup</InfoTagGroup>)
+    const wrapper = Enzyme.shallow(<InfoTagGroup name="Language" tags={tags} />)
     expect(shallowToJson(wrapper)).toMatchSnapshot()
   })
 })
