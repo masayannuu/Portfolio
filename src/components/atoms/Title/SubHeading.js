@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { SubTitle } from 'reactbulma'
 
 const StyledSubTitle = styled(SubTitle)`
-  color: #a2c4c7;
   font-feature-settings: 'palt';
   letter-spacing: 0.1em;
 `
