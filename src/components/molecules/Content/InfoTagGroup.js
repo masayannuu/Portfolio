@@ -10,8 +10,13 @@ const TagGroupField = styled(Field)`
   width: 200px;
 `
 
+const StyledField = styled(Field)`
+  margin-right: 0.8rem;
+  justify-content: flex-end !important;
+`
+
 const InfoTagGroup = ({ name, tags }) => (
-  <Field grouped>
+  <StyledField grouped>
     <ParagraphTitle>{name}</ParagraphTitle>
     <TagGroupField grouped className="is-grouped-multiline">
       {tags.map(tag => (
@@ -20,7 +25,7 @@ const InfoTagGroup = ({ name, tags }) => (
         </Control>
       ))}
     </TagGroupField>
-  </Field>
+  </StyledField>
 )
 
 InfoTagGroup.propTypes = {
