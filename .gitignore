@@ -1,7 +1,5 @@
 # dependencies
 /node_modules
-.storybook
-/stories
 
 # testing
 /coverage
