@@ -15,7 +15,11 @@ const Modal = ({
   `
 
   const StyledHeader = styled.header`
-    background-color: #f0f0f0;
+    background-color: #a2c4c7;
+  `
+
+  const StyledFooter = styled.footer`
+    background-color: #a2c4c7;
   `
 
   return (
@@ -29,11 +33,11 @@ const Modal = ({
         <section className="modal-card-body">
           <div className="content">{children}</div>
         </section>
-        <footer className="modal-card-foot">
+        <StyledFooter className="modal-card-foot">
           <Button white onClick={handleCloseModal}>
             Back
           </Button>
-        </footer>
+        </StyledFooter>
       </div>
     </div>
   )
