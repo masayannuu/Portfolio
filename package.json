@@ -10,7 +10,7 @@
     "serve": "serve dist -p 3000",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest"
+    "test": "jest --forceExit"
   },
   "jest": {
     "collectCoverage": true,
@@ -22,6 +22,7 @@
     "@fortawesome/fontawesome": "^1.1.5",
     "@fortawesome/fontawesome-free-solid": "^5.0.9",
     "axios": "^0.16.2",
+    "firebase": "4.9.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",

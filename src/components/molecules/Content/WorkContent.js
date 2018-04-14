@@ -34,7 +34,9 @@ const WorkContent = ({ heading, sub_heading, info_tags }) => (
     <div className="column">
       <StyledTitle className="is-size-5 has-text-right">{heading}</StyledTitle>
       <StyledSubTitle className="is-size-6 has-text-right">{sub_heading}</StyledSubTitle>
-      {info_tags.map(info_tag => <InfoTagGroup name={info_tag.name} tags={info_tag.tags} />)}
+      {info_tags.map(info_tag => (
+        <InfoTagGroup name={info_tag.name} tags={info_tag.tags} key={info_tag.name} />
+      ))}
       <StyledField grouped>
         <Icon>
           <i className="fa fa-angle-right" />

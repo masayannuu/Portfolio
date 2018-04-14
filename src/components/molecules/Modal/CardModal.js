@@ -1,14 +1,19 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Modal from './Modal'
 import ModalLink from '../../atoms/Link/ModalLink'
+import ModalBody from './ModalBody'
 
 class CardModal extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
       showModal: false,
-      title: props.title
+      title: props.title,
+      imageUrl: props.imageUrl,
+      description: props.description,
+      teamData: props.teamData
     }
     this.handleOpenModal = this.handleOpenModal.bind(this)
     this.handleCloseModal = this.handleCloseModal.bind(this)
@@ -24,25 +29,33 @@ class CardModal extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="tk-a-otf-gothic-bbb-pr6n">
         <ModalLink onClick={this.handleOpenModal} />
         <Modal
           handleCloseModal={this.handleCloseModal}
           showModal={this.state.showModal}
           title={this.state.title}
         >
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet justo in arcu
-            efficitur malesuada nec ut diam. Aenean a iaculis eros. Proin nec purus congue, rutrum
-            sapien id, sodales ante. Nam imperdiet sapien pretium leo dapibus euismod. Ut ac
-            venenatis nunc. Praesent viverra purus vel lacus ullamcorper porta a a augue. Proin
-            rhoncus tempus leo sed ultricies. In luctus aliquam placerat. Cras efficitur enim vitae
-            vulputate consequat. Nulla tellus est, fringilla quis nisi eu, aliquam finibus eros.
-          </p>
+          <ModalBody
+            imageUrl={this.state.imageUrl}
+            description={this.state.description}
+            teamData={this.state.teamData}
+          />
         </Modal>
       </div>
     )
   }
+}
+
+CardModal.propTypes = {
+  title: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  teamData: PropTypes.shape({
+    number: PropTypes.number,
+    roll: PropTypes.string,
+    work: PropTypes.string
+  }).isRequired
 }
 
 export default CardModal
