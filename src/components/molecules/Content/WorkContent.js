@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Image, Icon, Field } from 'reactbulma'
+import { Image } from 'reactbulma'
 
 import ParagraphTitle from '../../atoms/Paragraph/ParagraphTitle'
 import InfoTagGroup from './InfoTagGroup'
-import AppImage from '../../../../public/dataoctopus.png'
+import CardModal from '../Modal/CardModal'
 
 const WrapDiv = styled.div`
   width: 591px;
@@ -17,35 +17,23 @@ const StyledTitle = styled(ParagraphTitle)`
 const StyledSubTitle = styled(ParagraphTitle)`
   margin-bottom: 1rem;
 `
-
-const StyledField = styled(Field)`
-  margin-right: 0.8rem;
-  justify-content: flex-end !important;
-  font-size: 0.9rem;
-  position: relative;
-  &:hover {
-    cursor: pointer;
-    color: #a2c4c7;
-  }
-`
-
-const WorkContent = ({ heading, sub_heading, info_tags }) => (
+const WorkContent = ({ details }) => (
   <WrapDiv className="columns is-box">
     <div className="column">
-      <StyledTitle className="is-size-5 has-text-right">{heading}</StyledTitle>
-      <StyledSubTitle className="is-size-6 has-text-right">{sub_heading}</StyledSubTitle>
-      {info_tags.map(info_tag => (
+      <StyledTitle className="is-size-5 has-text-right">{details.title}</StyledTitle>
+      <StyledSubTitle className="is-size-6 has-text-right">{details.sub_title}</StyledSubTitle>
+      {details.info_tags.map(info_tag => (
         <InfoTagGroup name={info_tag.name} tags={info_tag.tags} key={info_tag.name} />
       ))}
-      <StyledField grouped>
-        <Icon>
-          <i className="fa fa-angle-right" />
-        </Icon>
-        Click & More
-      </StyledField>
+      <CardModal
+        title={details.title}
+        imageUrl={details.image_url}
+        description={details.description}
+        teamData={details.team_data}
+      />
     </div>
     <div className="column">
-      <Image src={AppImage} />
+      <Image src={details.image_url} />
     </div>
   </WrapDiv>
 )
