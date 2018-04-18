@@ -6,6 +6,9 @@ import NavbarItem from '../../atoms/Nav/NavbarItem'
 const NavMain = styled.nav`
   background-color: #a2c4c7;
 `
+const NavBar = styled.div`
+  background-color: #a2c4c7;
+`
 
 const NavTitle = styled.a`
   font-size: 1rem;
@@ -17,33 +20,54 @@ const NavTitle = styled.a`
     text-decoration: underline;
 
 `
-// TODO: ハンバーガーメニューのアクティブロジック
-const Nav = () => (
-  <NavMain className="navbar" aria-label="main navigation">
-    <div className="navbar-brand">
-      <div className="navbar-item">
-        <p className="control">
-          <NavTitle href="/">Masaya Morimoto</NavTitle>
-        </p>
-      </div>
-      <div role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true" />
-        <span aria-hidden="true" />
-        <span aria-hidden="true" />
-        <span aria-hidden="true" />
-        <span aria-hidden="true" />
-      </div>
-    </div>
-    <div className="navbar-menu">
-      <div className="navbar-end">
-        <NavbarItem href="#portfolio">PROFILE</NavbarItem>
-        <NavbarItem href="#work">WORK</NavbarItem>
-        <NavbarItem href="#sns">SNS</NavbarItem>
-        <NavbarItem href="#blog">BLOG</NavbarItem>
-        <NavbarItem href="#content">CONTACT</NavbarItem>
-      </div>
-    </div>
-  </NavMain>
-)
+class Nav extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      isActive: false
+    }
+    this.handleClickBurger = this.handleClickBurger.bind(this)
+  }
+
+  handleClickBurger () {
+    this.setState(prevState => ({ isActive: !prevState.isActive }))
+  }
+
+  render () {
+    return (
+      <NavMain className="navbar" aria-label="main navigation">
+        <div className="navbar-brand">
+          <div className="navbar-item">
+            <p className="control">
+              <NavTitle href="/">Masaya Morimoto</NavTitle>
+            </p>
+          </div>
+          <div
+            role="button"
+            className={`navbar-burger ${this.state.isActive ? 'is-active' : ''}`}
+            aria-label="menu"
+            aria-expanded="false"
+            onClick={this.handleClickBurger}
+            onKeyPress={this.handleClickBurger}
+            tabIndex={0}
+          >
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+          </div>
+        </div>
+        <NavBar className={`navbar-menu ${this.state.isActive ? 'is-active' : ''}`}>
+          <div className="navbar-end">
+            <NavbarItem href="#portfolio">PROFILE</NavbarItem>
+            <NavbarItem href="#work">WORK</NavbarItem>
+            <NavbarItem href="#sns">SNS</NavbarItem>
+            <NavbarItem href="#blog">BLOG</NavbarItem>
+            <NavbarItem href="#content">CONTACT</NavbarItem>
+          </div>
+        </NavBar>
+      </NavMain>
+    )
+  }
+}
 
 export default Nav
