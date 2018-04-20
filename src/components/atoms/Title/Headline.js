@@ -5,6 +5,7 @@ import { Title } from 'reactbulma'
 const StyledTitle = styled(Title)`
   font-feature-settings: 'palt';
   letter-spacing: 0.2em;
+  margin-bottom: 95px !important;
 `
 const Headline = props => <StyledTitle>{props.children}</StyledTitle>
 
