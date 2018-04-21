@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Section, Image } from 'reactbulma'
+import { Image } from 'reactbulma'
 
 import Headline from '../../atoms/Title/Headline'
+import StyledSection from '../../atoms/Section/StyledSection'
 import Icon from '../../../../public/icon.png'
 
 const StyledParagraph = styled.p`
@@ -27,7 +28,7 @@ const StyledImage = styled(Image)`
 `
 
 const Profile = () => (
-  <Section>
+  <StyledSection name="profile">
     <Headline>| PROFILE</Headline>
     <div className="columns">
       <StyledDiv className="column">
@@ -39,7 +40,7 @@ const Profile = () => (
         <StyledImage src={Icon} />
       </div>
     </div>
-  </Section>
+  </StyledSection>
 )
 
 export default Profile

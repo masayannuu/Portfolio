@@ -11,10 +11,10 @@ const NavBar = styled.div`
 `
 
 const NavTitle = styled.a`
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #ffffff;
   font-feature-settings: 'palt';
-  letter-spacing: 0.2em;
+  letter-spacing: 0.3em;
   &:hover {
     color: #ffffff;
     text-decoration: underline;
@@ -35,11 +35,11 @@ class Nav extends React.Component {
 
   render () {
     return (
-      <NavMain className="navbar" aria-label="main navigation">
+      <NavMain className="navbar is-fixed-top" aria-label="main navigation">
         <div className="navbar-brand">
           <div className="navbar-item">
             <p className="control">
-              <NavTitle href="/">Masaya Morimoto</NavTitle>
+              <NavTitle href="/">MASAYA MORIMOTO</NavTitle>
             </p>
           </div>
           <div

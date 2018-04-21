@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Section, Icon } from 'reactbulma'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
 import { SocialIcon } from 'react-social-icons'
 
 import { Headline, SubHeading } from '../../atoms/Title/index'
+import StyledSection from '../../atoms/Section/StyledSection'
 
 const StyledDiv = styled.div`
   @media screen and (min-width: 300px) {
@@ -49,7 +49,7 @@ const ContentDiv = styled.div`
 `
 
 const Sns = () => (
-  <Section>
+  <StyledSection name="sns">
     <Headline>| SNS</Headline>
     <div className="columns">
       <StyledDiv className="column">
@@ -77,7 +77,7 @@ const Sns = () => (
         </WrapDiv>
       </StyledIconDiv>
     </div>
-  </Section>
+  </StyledSection>
 )
 
 export default Sns

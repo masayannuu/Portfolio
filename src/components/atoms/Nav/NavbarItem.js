@@ -5,7 +5,7 @@ const NavAnker = styled.a`
   color: #ffffff;
   font-feature-settings: 'palt';
   letter-spacing: 0.2em;
-  font-size: 0.8rem;
+  font-size: 81.25%;
   &:hover {
     color: #f0f0f0;
     text-decoration: underline;
