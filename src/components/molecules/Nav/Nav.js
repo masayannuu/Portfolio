@@ -17,8 +17,7 @@ const NavTitle = styled.a`
   letter-spacing: 0.3em;
   &:hover {
     color: #ffffff;
-    text-decoration: underline;
-
+  }
 `
 class Nav extends React.Component {
   constructor (props) {

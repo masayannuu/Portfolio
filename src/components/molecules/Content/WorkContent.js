@@ -8,7 +8,12 @@ import InfoTagGroup from './InfoTagGroup'
 import CardModal from '../Modal/CardModal'
 
 const WrapDiv = styled.div`
-  // width: 591px;
+  @media screen and (min-width: 300px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 600px) {
+    width: 593px;
+  }
 `
 
 const StyledTitle = styled(ParagraphTitle)`
@@ -18,6 +23,7 @@ const StyledTitle = styled(ParagraphTitle)`
 const StyledSubTitle = styled(ParagraphTitle)`
   margin-bottom: 1rem;
 `
+
 const WorkContent = ({ content }) => (
   <WrapDiv className="columns is-box">
     <div className="column">

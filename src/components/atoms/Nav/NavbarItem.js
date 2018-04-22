@@ -9,6 +9,9 @@ const NavAnker = styled.a`
   &:hover {
     color: #f0f0f0;
     text-decoration: underline;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 1s ease;
+    text-shadow: #057D9F 0px 0px 20px;
   }
 `
 
