@@ -60,7 +60,6 @@ class Nav extends React.Component {
             <NavbarItem href="#portfolio">PROFILE</NavbarItem>
             <NavbarItem href="#work">WORK</NavbarItem>
             <NavbarItem href="#sns">SNS</NavbarItem>
-            <NavbarItem href="#blog">BLOG</NavbarItem>
             <NavbarItem href="#content">CONTACT</NavbarItem>
           </div>
         </NavBar>
