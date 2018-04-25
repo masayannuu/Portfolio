@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
 import { SocialIcon } from 'react-social-icons'
+import InViewMonitor from 'react-inview-monitor'
 
 import { Headline, SubHeading } from '../../atoms/Title/index'
 import StyledSection from '../../atoms/Section/StyledSection'
@@ -62,18 +63,20 @@ const Sns = () => (
       <StyledIconDiv className="column">
         <WrapDiv>
           <SubHeading>▼Links</SubHeading>
-          <ContentDiv>
-            <SocialIcon url="https://twitter.com/masayannu" color="black" />
-          </ContentDiv>
-          <ContentDiv>
-            <SocialIcon url="https://github.com/masayannuu" color="black" />
-          </ContentDiv>
-          <ContentDiv>
-            <SocialIcon url="https://www.facebook.com/masaya.morimoto.18" color="black" />
-          </ContentDiv>
-          <ContentDiv>
-            <SocialIcon url="https://www.instagram.com/masayannuu/" color="black" />
-          </ContentDiv>
+          <InViewMonitor classNameNotInView="is-invisible" classNameInView="animated rubberBand">
+            <ContentDiv>
+              <SocialIcon url="https://twitter.com/masayannu" color="black" />
+            </ContentDiv>
+            <ContentDiv>
+              <SocialIcon url="https://github.com/masayannuu" color="black" />
+            </ContentDiv>
+            <ContentDiv>
+              <SocialIcon url="https://www.facebook.com/masaya.morimoto.18" color="black" />
+            </ContentDiv>
+            <ContentDiv>
+              <SocialIcon url="https://www.instagram.com/masayannuu/" color="black" />
+            </ContentDiv>
+          </InViewMonitor>
         </WrapDiv>
       </StyledIconDiv>
     </div>

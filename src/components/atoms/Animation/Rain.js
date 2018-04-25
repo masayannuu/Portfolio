@@ -6,13 +6,13 @@ const rainDrop = targetY =>
   new mojs.Shape({
     shape: 'circle',
     fill: 'none',
-    radius: 1,
+    radius: 1.5,
     scaleY: 'rand(1, 3)',
     stroke: '#057D9F',
     strokeLinecap: 'round',
     opacity: { 0.8: 0.5, easing: 'cubic.out' },
     scale: { 1: 0, eacing: 'cubic.out' },
-    y: { [-300]: targetY },
+    y: { [-100]: targetY },
     x: 'rand(-300, 300)',
     delay: 'rand(0, 5000)',
     duration: 1500
