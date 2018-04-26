@@ -50,7 +50,7 @@ const ContentDiv = styled.div`
 `
 
 const Sns = () => (
-  <StyledSection name="sns">
+  <StyledSection id="sns">
     <Headline>| SNS</Headline>
     <div className="columns">
       <StyledDiv className="column">
@@ -62,7 +62,9 @@ const Sns = () => (
       </StyledDiv>
       <StyledIconDiv className="column">
         <WrapDiv>
-          <SubHeading>▼Links</SubHeading>
+          <div id="contact">
+            <SubHeading>▼Links</SubHeading>
+          </div>
           <InViewMonitor classNameNotInView="is-invisible" classNameInView="animated rubberBand">
             <ContentDiv>
               <SocialIcon url="https://twitter.com/masayannu" color="black" />

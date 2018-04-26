@@ -24,6 +24,6 @@ const details = {
 
 const tests = [details, details, details, details, details]
 
-storiesOf('Tempkates.LandingPage', module).add('LandingPage', () => (
+storiesOf('Templates.LandingPage', module).add('LandingPage', () => (
   <LandingPage contents={tests} />
 ))

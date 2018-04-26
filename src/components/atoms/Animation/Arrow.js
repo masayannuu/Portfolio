@@ -1,10 +1,10 @@
 import React from 'react'
 import mojs from 'mo-js'
 
-const line = new mojs.Shape({
+const line_option = {
   shape: 'line',
   radius: 20,
-  stroke: '#D1613B',
+  stroke: '#A2C4C7',
   strokeDasharray: '100%',
   strokeDashoffset: { '-100%': '100%' },
   left: '50%',
@@ -12,29 +12,40 @@ const line = new mojs.Shape({
   angle: '-90',
   fill: 'none',
   duration: 2000
-}).then({
-  strokeDashoffset: { '100%': '-100%' },
-  srtoke: '#D1613B'
-})
+}
 
-const head = new mojs.Shape({
+const head_option = {
   shape: 'zigzag',
   radius: 10,
   radiusY: 21,
   left: '50%',
   y: 1450,
-  fill: { none: '#D1613B', easing: 'cubic.in' },
-  srtoke: '#D1613B',
+  fill: { none: '#A2C4C7', easing: 'cubic.in' },
+  srtoke: '#A2C4C7',
   strokeDasharray: '100%',
   strokeDashoffset: { '-100%': '100%' },
-  stroke: '#D1613B',
+  stroke: '#A2C4C7',
   srtokeOpacity: { 1: 0 },
   angle: 180,
   duration: 2000
-})
+}
 
 export default class Arrow extends React.Component {
   componentDidMount () {
+    const element = document.querySelector('#arrow')
+    const line = new mojs.Shape({
+      ...line_option,
+      parent: element
+    }).then({
+      strokeDashoffset: { '100%': '-100%' },
+      srtoke: '#A2C4C7'
+    })
+
+    const head = new mojs.Shape({
+      ...head_option,
+      parent: element
+    })
+
     new mojs.Timeline({
       repeat: 999
     })
@@ -43,6 +54,6 @@ export default class Arrow extends React.Component {
   }
 
   render () {
-    return <div />
+    return <div id="arrow" />
   }
 }

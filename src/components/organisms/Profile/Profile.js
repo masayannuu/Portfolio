@@ -35,24 +35,18 @@ const StyledImage = styled(Image)`
 `
 
 const Profile = () => (
-  <StyledSection name="profile">
+  <StyledSection id="profile">
     <Headline>| PROFILE</Headline>
     <div className="columns">
       <StyledDiv className="column">
-        <InViewMonitor
-          classNameNotInView="is-invisible"
-          classNameInView="animated slideInUp"
-        >
+        <InViewMonitor classNameNotInView="is-invisible" classNameInView="animated slideInUp">
           <StyledParagraph>
             この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字
           </StyledParagraph>
         </InViewMonitor>
       </StyledDiv>
       <div className="column">
-        <InViewMonitor
-          classNameNotInView="is-invisible"
-          classNameInView="animated slideInRight"
-        >
+        <InViewMonitor classNameNotInView="is-invisible" classNameInView="animated slideInRight">
           <StyledImage src={Icon} />
         </InViewMonitor>
       </div>

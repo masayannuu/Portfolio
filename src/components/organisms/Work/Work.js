@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Image } from 'reactbulma'
-import InViewMonitor from 'react-inview-monitor'
 
 import { Headline } from '../../atoms/Title/index'
 import WorkContent from '../../molecules/Content/WorkContent'
@@ -23,7 +22,7 @@ const StyledImage = styled(Image)`
 `
 
 const Work = ({ contents }) => (
-  <StyledSection name="work">
+  <StyledSection id="work">
     <Headline>| WORK</Headline>
     <div className="columns">
       <div className="column">

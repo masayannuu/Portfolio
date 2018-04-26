@@ -57,10 +57,10 @@ class Nav extends React.Component {
         </div>
         <NavBar className={`navbar-menu ${this.state.isActive ? 'is-active' : ''}`}>
           <div className="navbar-end">
-            <NavbarItem href="#portfolio">PROFILE</NavbarItem>
+            <NavbarItem href="#profile">PROFILE</NavbarItem>
             <NavbarItem href="#work">WORK</NavbarItem>
             <NavbarItem href="#sns">SNS</NavbarItem>
-            <NavbarItem href="#content">CONTACT</NavbarItem>
+            <NavbarItem href="#contact">CONTACT</NavbarItem>
           </div>
         </NavBar>
       </NavMain>
