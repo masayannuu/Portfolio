@@ -3,11 +3,12 @@ import MediaQuery from 'react-responsive'
 import { Image } from 'reactbulma'
 
 import { Head, Profile, Work, Sns, Footer } from '../../organisms/index'
-import { Rain, Arrow } from '../../atoms/Animation/index'
+import { Rain, Arrow, Bubble } from '../../atoms/Animation/index'
 import Umbrella from '../../../../public/umbrella.png'
 
 const LandingPage = ({ contents }) => (
   <div>
+    <Bubble />
     <Head />
     <MediaQuery query="(min-device-width: 1224px)">
       <Rain targetY={680} />
