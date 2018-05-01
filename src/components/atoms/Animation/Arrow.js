@@ -46,10 +46,25 @@ export default class Arrow extends React.Component {
       parent: element
     })
 
+    const second_line = new mojs.Shape({
+      ...line_option,
+      y: 1530,
+      parent: element
+    }).then({
+      strokeDashoffset: { '100%': '-100%' },
+      srtoke: '#A2C4C7'
+    })
+
+    const second_head = new mojs.Shape({
+      ...head_option,
+      y: 1530,
+      parent: element
+    })
+
     new mojs.Timeline({
       repeat: 999
     })
-      .add(line, head)
+      .add(line, head, second_line, second_head)
       .play()
   }
 
