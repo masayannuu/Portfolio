@@ -2,7 +2,7 @@ import React from 'react'
 import MediaQuery from 'react-responsive'
 import { Image } from 'reactbulma'
 
-import { Head, Profile, Work, Sns, Footer } from '../../organisms/index'
+import { Head, Profile, ThreePoints, Work, Sns, Footer } from '../../organisms/index'
 import { Rain, Arrow, Bubble } from '../../atoms/Animation/index'
 import Umbrella from '../../../../public/umbrella.png'
 
@@ -18,6 +18,7 @@ const LandingPage = ({ contents }) => (
     </MediaQuery>
     <Image src={Umbrella} is="128x128" />
     <Profile />
+    <ThreePoints />
     <Arrow />
     <Work contents={contents} />
     <Sns />
