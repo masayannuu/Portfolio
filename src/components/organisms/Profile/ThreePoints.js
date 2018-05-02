@@ -44,7 +44,7 @@ const StyledAnker = styled.a`
 
 const ThreePoints = () => (
   <StyledSection id="ThreePoints">
-    <SubHeading>3Points</SubHeading>
+    <SubHeading>3POINTS</SubHeading>
     <div className="columns">
       <div className="column">
         <InViewMonitor classNameNotInView="is-invisible" classNameInView="animated slideInRight">
@@ -88,7 +88,7 @@ const ThreePoints = () => (
               <b>スノーボード好き</b>
               <ul>
                 <li>10歳離れた兄とのコミュニケーション手段だったが、めっちゃハマった</li>
-                <li>フリーラン・バックカントリーがメイン。エアー練習中</li>
+                <li>フリーラン・バックカントリーがメイン。エアーは練習中</li>
               </ul>
             </li>
           </ol>

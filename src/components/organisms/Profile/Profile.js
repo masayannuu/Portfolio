@@ -69,7 +69,7 @@ const Profile = () => (
             </p>
             <StyledHistoryDiv>
               <p>
-                <b>2011~2014 Add (Ba.)</b>
+                <b>2011~2014 add (Ba.)</b>
               </p>
               <p>
                 <b>
