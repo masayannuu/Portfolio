@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 import LandingPage from './LandingPage'
 
 const tags = ['Ruby', 'Js', 'java', 'C#', 'hoge']
-const info_tags = [{ name: 'Language', tags }, { name: 'Use Tech', tags }]
+const info_tags = [{ name: 'Language', tags }, { name: 'Using', tags }]
 const description =
   'この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字'
 const team_data = {
