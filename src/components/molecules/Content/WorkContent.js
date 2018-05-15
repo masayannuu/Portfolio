@@ -4,14 +4,13 @@ import styled from 'styled-components'
 import { Image } from 'reactbulma'
 
 import ParagraphTitle from '../../atoms/Paragraph/ParagraphTitle'
-import InfoTagGroup from './InfoTagGroup'
 import CardModal from '../Modal/CardModal'
 
 const WrapDiv = styled.div`
-  @media screen and (min-width: 300px) {
+  @media screen and (max-width: 480px) {
     width: 100%;
   }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     width: 593px;
   }
 `
@@ -24,26 +23,37 @@ const StyledSubTitle = styled(ParagraphTitle)`
   margin-bottom: 1rem;
 `
 
-const WorkContent = ({ content }) => (
-  <WrapDiv className="columns is-box">
-    <div className="column">
-      <StyledTitle className="is-size-5 has-text-right">{content.title}</StyledTitle>
-      <StyledSubTitle className="is-size-6 has-text-right">{content.sub_title}</StyledSubTitle>
-      {content.info_tags.map(info_tag => (
-        <InfoTagGroup name={info_tag.name} tags={info_tag.tags} key={info_tag.name} />
-      ))}
-      <CardModal
-        title={content.title}
-        imageUrl={content.image_url}
-        description={content.description}
-        teamData={content.team_data}
-      />
-    </div>
-    <div className="column">
-      <Image src={content.image_url} />
-    </div>
-  </WrapDiv>
-)
+class WorkContent extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      content: props.content
+    }
+  }
+
+  render () {
+    return (
+      <WrapDiv className="columns">
+        <div className="column">
+          <StyledTitle className="is-size-5 has-text-right">{this.state.content.title}</StyledTitle>
+          <StyledSubTitle className="is-size-6 has-text-right">
+            {this.state.content.sub_title}
+          </StyledSubTitle>
+          <CardModal
+            title={this.state.content.title}
+            imageUrl={this.state.content.image_url}
+            description={this.state.content.description}
+            teamData={this.state.content.team_data}
+            informationTags={this.state.content.information_tags}
+          />
+        </div>
+        <div className="column">
+          <Image src={this.state.content.image_url} />
+        </div>
+      </WrapDiv>
+    )
+  }
+}
 
 WorkContent.propTypes = {
   content: PropTypes.shape({

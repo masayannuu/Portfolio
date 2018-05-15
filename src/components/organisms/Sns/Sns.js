@@ -63,7 +63,7 @@ const Sns = () => (
       <StyledIconDiv className="column">
         <WrapDiv>
           <div id="contact">
-            <SubHeading>▼Links</SubHeading>
+            <SubHeading>Contact</SubHeading>
           </div>
           <InViewMonitor classNameNotInView="is-invisible" classNameInView="animated rubberBand">
             <ContentDiv>

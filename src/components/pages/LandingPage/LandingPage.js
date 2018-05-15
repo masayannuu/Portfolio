@@ -1,29 +1,30 @@
 import React from 'react'
-import MediaQuery from 'react-responsive'
-import { Image } from 'reactbulma'
 
-import { Head, Profile, Work, Sns, Footer } from '../../organisms/index'
-import { Rain, Arrow } from '../../atoms/Animation/index'
-import Umbrella from '../../../../public/umbrella.png'
+import LandingPageTemplate from '../../templates/LandingPage/LandingPage'
+import FirebaseClient from '../../../../lib/Domain/FirebaseClient'
 
-const contents = {}
+class LandingPage extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      contents: []
+    }
+  }
 
-const LandingPage = () => (
-  <div>
-    <Head />
-    <MediaQuery query="(min-device-width: 1224px)">
-      <Rain targetY={680} />
-    </MediaQuery>
-    <MediaQuery query="(max-width: 1224px)">
-      <Rain targetY={200} />
-    </MediaQuery>
-    <Image src={Umbrella} is="128x128" />
-    <Profile />
-    <Arrow />
-    <Work contents={contents} />
-    <Sns />
-    <Footer />
-  </div>
-)
+  componentDidMount () {
+    this.getData()
+  }
+
+  async getData () {
+    const client = new FirebaseClient()
+    const contents = await client.find('work_contents')
+    this.setState({ contents })
+  }
+
+  render () {
+    console.log(this.state.contents)
+    return <LandingPageTemplate contents={this.state.contents} />
+  }
+}
 
 export default LandingPage

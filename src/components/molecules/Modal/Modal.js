@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Button, Delete } from 'reactbulma'
-import InViewMonitor from 'react-inview-monitor'
 
 const Modal = ({
   children, handleCloseModal, showModal, title
@@ -22,8 +21,9 @@ const Modal = ({
   const StyledFooter = styled.footer`
     background-color: #a2c4c7;
   `
+
   return (
-    <div className="modal is-active animated flipInX">
+    <div className="modal is-active animated bounceInUp">
       <StyledBack className="modal-background" />
       <div className="modal-card">
         <StyledHeader className="modal-card-head">

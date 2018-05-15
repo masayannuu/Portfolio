@@ -13,7 +13,8 @@ class CardModal extends React.Component {
       title: props.title,
       imageUrl: props.imageUrl,
       description: props.description,
-      teamData: props.teamData
+      teamData: props.teamData,
+      informationTags: props.informationTags
     }
     this.handleOpenModal = this.handleOpenModal.bind(this)
     this.handleCloseModal = this.handleCloseModal.bind(this)
@@ -28,6 +29,7 @@ class CardModal extends React.Component {
   }
 
   render () {
+    const isTag = typeof this.state.informationTags !== 'undefined'
     return (
       <div className="tk-a-otf-gothic-bbb-pr6n">
         <ModalLink onClick={this.handleOpenModal} />
@@ -40,6 +42,8 @@ class CardModal extends React.Component {
             imageUrl={this.state.imageUrl}
             description={this.state.description}
             teamData={this.state.teamData}
+            informationTags={this.state.informationTags}
+            isTag={isTag}
           />
         </Modal>
       </div>
