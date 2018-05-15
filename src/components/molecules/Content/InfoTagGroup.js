@@ -7,16 +7,11 @@ import InfoTag from '../../atoms/Label/InfoTag'
 import ParagraphTitle from '../../atoms/Paragraph/ParagraphTitle'
 
 const TagGroupField = styled(Field)`
-  width: 200px;
-`
-
-const StyledField = styled(Field)`
-  margin-right: 0.8rem;
-  justify-content: flex-end !important;
+  width: 100%;
 `
 
 const InfoTagGroup = ({ name, tags }) => (
-  <StyledField grouped>
+  <Field grouped>
     <ParagraphTitle>{name}</ParagraphTitle>
     <TagGroupField grouped className="is-grouped-multiline">
       {tags.map(tag => (
@@ -25,7 +20,7 @@ const InfoTagGroup = ({ name, tags }) => (
         </Control>
       ))}
     </TagGroupField>
-  </StyledField>
+  </Field>
 )
 
 InfoTagGroup.propTypes = {

@@ -8,10 +8,10 @@ import StyledSection from '../../atoms/Section/StyledSection'
 import Icon from '../../../../public/three-sibe-back.png'
 
 const StyledDiv = styled.div`
-  @media screen and (min-width: 300px) {
+  @media screen and (max-width: 480px) {
     width: 100%;
   }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     width: 593px;
   }
   font-feature-settings: 'palt';
@@ -46,11 +46,11 @@ const ThreePoints = () => (
   <StyledSection id="ThreePoints">
     <SubHeading>3POINTS</SubHeading>
     <div className="columns">
-      <div className="column">
-        <InViewMonitor classNameNotInView="is-invisible" classNameInView="animated slideInRight">
+      <StyledDiv className="column">
+        <InViewMonitor classNameNotInView="is-invisible" classNameInView="animated slideInLeft">
           <StyledImage src={Icon} />
         </InViewMonitor>
-      </div>
+      </StyledDiv>
       <StyledDiv className="column tk-a-otf-gothic-bbb-pr6n">
         <InViewMonitor classNameNotInView="is-invisible" classNameInView="animated slideInUp">
           <ol>
