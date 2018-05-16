@@ -7,39 +7,8 @@ import Typekit from 'react-typekit'
 export default {
   preact: true,
   getSiteData: () => ({
-    title: 'React Static'
+    title: 'Masaya Morimoto'
   }),
-  getRoutes: async () => {
-    const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts')
-    return [
-      {
-        path: '/',
-        component: 'src/containers/Home'
-      },
-      {
-        path: '/about',
-        component: 'src/containers/About'
-      },
-      {
-        path: '/blog',
-        component: 'src/containers/Blog',
-        getData: () => ({
-          posts
-        }),
-        children: posts.map(post => ({
-          path: `/post/${post.id}`,
-          component: 'src/containers/Post',
-          getData: () => ({
-            post
-          })
-        }))
-      },
-      {
-        is404: true,
-        component: 'src/containers/404'
-      }
-    ]
-  },
   renderToHtml: (render, Comp, meta) => {
     const sheet = new ServerStyleSheet()
     const html = render(sheet.collectStyles(<Comp />))
@@ -59,7 +28,11 @@ export default {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <Typekit kitId="lyf0hzv" />
             {renderMeta.styleTags}
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" />
+            <link
+              rel="stylesheet"
+              crossOrigin="true"
+              href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+            />
           </Head>
           <Body>{children}</Body>
         </Html>
