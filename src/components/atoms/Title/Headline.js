@@ -13,11 +13,10 @@ const StyledTitle = styled(Title)`
 `
 
 const Headline = props => (
-  <InViewMonitor
-    classNameNotInView="is-invisible"
-    classNameInView="animated fadeInUp"
-  >
-    <StyledTitle className="is-size-3-mobile is-size-1-desktop is-size-1-tablet">{props.children}</StyledTitle>
+  <InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated fadeInUp">
+    <StyledTitle className="is-size-3-mobile is-size-1-desktop is-size-1-tablet">
+      {props.children}
+    </StyledTitle>
   </InViewMonitor>
 )
 

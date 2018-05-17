@@ -67,7 +67,7 @@ const Sns = () => (
           <div id="contact">
             <SubHeading>Contact</SubHeading>
           </div>
-          <InViewMonitor classNameNotInView="is-invisible" classNameInView="animated rubberBand">
+          <InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated rubberBand">
             <ContentDiv>
               <SocialIcon url="https://twitter.com/masayannu" color="black" />
             </ContentDiv>

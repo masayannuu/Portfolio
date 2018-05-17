@@ -47,12 +47,12 @@ const ThreePoints = () => (
     <SubHeading>3POINTS</SubHeading>
     <div className="columns">
       <StyledDiv className="column">
-        <InViewMonitor classNameNotInView="is-invisible" classNameInView="animated slideInLeft">
+        <InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated slideInLeft">
           <StyledImage src={Icon} />
         </InViewMonitor>
       </StyledDiv>
       <StyledDiv className="column tk-a-otf-gothic-bbb-pr6n">
-        <InViewMonitor classNameNotInView="is-invisible" classNameInView="animated slideInUp">
+        <InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated slideInUp">
           <ol>
             <li>
               <b>毎日読書</b>

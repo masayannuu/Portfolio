@@ -24,6 +24,10 @@ injectGlobal`
    .wf-inactive {
     font-family: sans-serif;
    }
+
+   .vis-hidden {
+    visibility: hidden;
+  }
 `
 
 const App = () => <LandingPage />

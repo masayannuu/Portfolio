@@ -52,7 +52,7 @@ const Profile = () => (
     <Headline>| PROFILE</Headline>
     <div className="columns">
       <StyledDiv className="column">
-        <InViewMonitor classNameNotInView="is-invisible" classNameInView="animated slideInUp">
+        <InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated slideInUp">
           <StyledParagraph>
             <p>1993年2月20日生まれ。広島出身。</p>
             <p>
@@ -94,7 +94,7 @@ const Profile = () => (
         </InViewMonitor>
       </StyledDiv>
       <div className="column">
-        <InViewMonitor classNameNotInView="is-invisible" classNameInView="animated slideInRight">
+        <InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated slideInRight">
           <StyledImage src={Icon} />
         </InViewMonitor>
       </div>
