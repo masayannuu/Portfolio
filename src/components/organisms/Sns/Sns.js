@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { TwitterTimelineEmbed } from 'react-twitter-embed'
+import { Timeline } from 'react-twitter-widgets'
 import { SocialIcon } from 'react-social-icons'
 import InViewMonitor from 'react-inview-monitor'
 
@@ -54,9 +54,11 @@ const Sns = () => (
     <Headline>| SNS</Headline>
     <div className="columns">
       <StyledDiv className="column">
-        <TwitterTimelineEmbed
-          sourceType="profile"
-          screenName="masayannu"
+        <Timeline
+          dataSource={{
+            sourceType: 'profile',
+            screenName: 'masayannu',
+          }}
           options={{ height: 593 }}
         />
       </StyledDiv>
