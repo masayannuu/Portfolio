@@ -1,8 +1,9 @@
 import React from 'react'
-import mojs from 'mo-js'
+// import mojs from 'mo-js'
 
 export default class Bubble extends React.Component {
   componentDidMount () {
+    const mojs = require('mo-js')
     const burst = new mojs.Burst({
       left: 0,
       top: 0,

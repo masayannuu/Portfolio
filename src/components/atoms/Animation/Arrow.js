@@ -1,5 +1,4 @@
 import React from 'react'
-import mojs from 'mo-js'
 
 const line_option = {
   shape: 'line',
@@ -29,62 +28,39 @@ const head_option = {
 }
 
 export default class Arrow extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      width: window.innerWidth
-    }
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this)
-  }
-
-  updateWindowDimensions () {
-    this.setState({ width: window.innerWidth })
-  }
-
-  componentWillMount () {
-    window.addEventListener('resize', this.updateWindowDimensions)
-  }
-
   componentDidMount () {
-    this.updateWindowDimensions()
-    window.addEventListener('resize', this.updateWindowDimensions)
-
+    const mojs = require('mo-js')
     const element = document.querySelector('#arrow')
-    const line = new mojs.Shape({
-      ...line_option,
-      y: this.state.width < 480 ? 1300 : 1450,
-      parent: element
-    }).then({
-      strokeDashoffset: { '100%': '-100%' },
-      srtoke: '#A2C4C7'
-    })
+    const createLine = x =>
+      new mojs.Shape({
+        ...line_option,
+        y: 1400,
+        x,
+        parent: element
+      }).then({
+        strokeDashoffset: { '100%': '-100%' },
+        srtoke: '#A2C4C7'
+      })
 
-    const head = new mojs.Shape({
-      ...head_option,
-      y: this.state.width < 480 ? 1300 : 1450,
-      parent: element
-    })
-
-    const second_line = new mojs.Shape({
-      ...line_option,
-      y: this.state.width < 480 ? 1350 : 1530,
-      parent: element
-    }).then({
-      strokeDashoffset: { '100%': '-100%' },
-      srtoke: '#A2C4C7'
-    })
-
-    const second_head = new mojs.Shape({
-      ...head_option,
-      y: this.state.width < 480 ? 1350 : 1530,
-      parent: element
-    })
+    const createHead = x =>
+      new mojs.Shape({
+        ...head_option,
+        y: 1400,
+        x,
+        parent: element
+      })
 
     new mojs.Timeline({
       repeat: 999
     })
-      .add(line, head)
-      .add(second_line, second_head)
+      .add(
+        createLine(30),
+        createHead(30),
+        createLine(0),
+        createHead(0),
+        createLine('-30'),
+        createHead('-30')
+      )
       .play()
   }
 
