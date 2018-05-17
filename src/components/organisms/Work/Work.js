@@ -151,8 +151,4 @@ class Work extends React.Component {
   }
 }
 
-Work.propTypes = {
-  contents: PropTypes.array
-}
-
 export default Work
