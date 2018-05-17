@@ -4,7 +4,9 @@ import styled from 'styled-components'
 import { Image } from 'reactbulma'
 
 import ParagraphTitle from '../../atoms/Paragraph/ParagraphTitle'
-import CardModal from '../Modal/CardModal'
+import Modal from '../Modal/Modal'
+import ModalLink from '../../atoms/Link/ModalLink'
+import ModalBody from '../Modal/ModalBody'
 
 const WrapDiv = styled.div`
   @media screen and (max-width: 480px) {
@@ -20,18 +22,40 @@ const StyledTitle = styled(ParagraphTitle)`
 `
 
 const StyledSubTitle = styled(ParagraphTitle)`
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+`
+
+const StyledDiv = styled.div`
+  margin-top: 1rem;
+`
+
+const StyledImage = styled(Image)`
+  &:hover {
+    cursor: pointer;
+  }
 `
 
 class WorkContent extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      content: props.content
+      content: props.content,
+      showModal: false
     }
+    this.handleOpenModal = this.handleOpenModal.bind(this)
+    this.handleCloseModal = this.handleCloseModal.bind(this)
+  }
+
+  handleOpenModal () {
+    this.setState({ showModal: true })
+  }
+
+  handleCloseModal () {
+    this.setState({ showModal: false })
   }
 
   render () {
+    const isTag = typeof this.state.content.information_tags !== 'undefined'
     return (
       <WrapDiv className="columns">
         <div className="column">
@@ -39,16 +63,27 @@ class WorkContent extends React.Component {
           <StyledSubTitle className="is-size-6 has-text-right">
             {this.state.content.sub_title}
           </StyledSubTitle>
-          <CardModal
-            title={this.state.content.title}
-            imageUrl={this.state.content.image_url}
-            description={this.state.content.description}
-            teamData={this.state.content.team_data}
-            informationTags={this.state.content.information_tags}
-          />
+          <div className="tk-a-otf-gothic-bbb-pr6n">
+            <Modal
+              handleCloseModal={this.handleCloseModal}
+              showModal={this.state.showModal}
+              title={this.state.content.title}
+            >
+              <ModalBody
+                imageUrl={this.state.content.image_url}
+                description={this.state.content.description}
+                teamData={this.state.content.team_data}
+                informationTags={this.state.content.information_tags}
+                isTag={isTag}
+              />
+            </Modal>
+          </div>
         </div>
         <div className="column">
-          <Image src={this.state.content.image_url} />
+          <StyledImage src={this.state.content.image_url} onClick={this.handleOpenModal} />
+          <StyledDiv>
+            <ModalLink onClick={this.handleOpenModal} />
+          </StyledDiv>
         </div>
       </WrapDiv>
     )
@@ -67,7 +102,8 @@ WorkContent.propTypes = {
       roll: PropTypes.string,
       work: PropTypes.string
     }).isRequired
-  }).isRequired
+  }).isRequired,
+  showModal: PropTypes.bool
 }
 
 export default WorkContent
