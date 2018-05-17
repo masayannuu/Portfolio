@@ -5,7 +5,7 @@ import { Icon, Field } from 'reactbulma'
 const StyledField = styled(Field)`
   margin-right: 0.8rem;
   justify-content: flex-end !important;
-  font-size: 0.9rem;
+  font-size: 1rem;
   position: relative;
   &:hover {
     cursor: pointer;
