@@ -6,6 +6,7 @@ import NavbarItem from '../../atoms/Nav/NavbarItem'
 const NavMain = styled.nav`
   background-color: #a2c4c7;
 `
+
 const NavBar = styled.div`
   background-color: #a2c4c7;
 `

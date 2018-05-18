@@ -10,11 +10,11 @@ const LandingPage = () => (
   <div>
     <Bubble />
     <Head />
-    <MediaQuery query="(min-device-width: 1224px)">
-      <Rain targetY={680} />
+    <MediaQuery query="(min-device-width: 769px)">
+      <Rain targetY={680} isMobile={false} />
     </MediaQuery>
-    <MediaQuery query="(max-width: 1224px)">
-      <Rain targetY={200} />
+    <MediaQuery query="(max-width: 768px)">
+      <Rain targetY={200} isMobile />
     </MediaQuery>
     <Image src={Umbrella} is="128x128" />
     <Profile />

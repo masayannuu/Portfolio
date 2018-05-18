@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 const rainOption = {
   shape: 'circle',
@@ -10,7 +11,6 @@ const rainOption = {
   strokeLinecap: 'round',
   opacity: { 0.8: 0.5, easing: 'cubic.out' },
   scale: { 1: 0, eacing: 'cubic.out' },
-  x: 'rand(-300, 300)',
   delay: 'rand(0, 5000)',
   duration: 1500
 }
@@ -29,16 +29,19 @@ export default class Rain extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      targetY: props.targetY
+      targetY: props.targetY,
+      isMobile: props.isMobile
     }
   }
 
   componentDidMount () {
     const mojs = require('mo-js')
+    const x = this.state.isMobile ? 'rand(-100, 100)' : 'rand(-300, 300)'
     const rainDrop = targetY =>
       new mojs.Shape({
         ...rainOption,
-        y: { [-100]: targetY }
+        y: { [-100]: targetY },
+        x
       }).then({
         ...circleOptin,
         y: targetY
