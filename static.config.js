@@ -9,7 +9,7 @@ const reactStaticFavicons = new ReactStaticFavicons({
   outputDir: path.join(__dirname, 'dist'),
 
   // string: the source imag
-  inputFile: path.join(__dirname, 'public', 'favicon.ico'),
+  inputFile: path.join(__dirname, 'public', 'favicon.png'),
 
   // object: the configuration passed directory to favicons
   configuration: {
