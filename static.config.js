@@ -32,6 +32,7 @@ export default {
     meta.styleTags = sheet.getStyleElement()
     return html
   },
+  siteRoot: 'https://portfolio-masayannuu.netlify.com/',
   Document: class CustomHtml extends Component {
     render () {
       const {
