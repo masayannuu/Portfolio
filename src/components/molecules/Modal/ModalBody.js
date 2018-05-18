@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { Image } from 'reactbulma'
 
 import InfoTagGroup from '../Content/InfoTagGroup'
+import Paragraph from '../../atoms/Paragraph/Paragraph'
 
 const StyledDiv = styled.div`
   font-feature-settings: 'palt';
@@ -46,9 +47,7 @@ class ModalBody extends React.Component {
         <Image src={this.state.imageUrl} />
         <h3>説明</h3>
         <dl>
-          <dd>
-            <p>{this.state.description}</p>
-          </dd>
+          <Paragraph text={this.state.description} />
         </dl>
         {infomationTag()}
         <h3>チームについて</h3>
@@ -58,7 +57,7 @@ class ModalBody extends React.Component {
           <StyledDt>役割</StyledDt>
           <dd>{this.state.teamData.roll}</dd>
           <StyledDt>やったこと</StyledDt>
-          <dd>{this.state.teamData.work}</dd>
+          <Paragraph text={this.state.teamData.work} />
         </dl>
       </StyledDiv>
     )
