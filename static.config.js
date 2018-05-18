@@ -50,7 +50,7 @@ export default {
             />
             {renderMeta.styleTags}
             {renderMeta.faviconsElements}
-            <title>Masaya Morimoto</title>
+            <title>MASAYA MORIMOTO | PORTFOLIO</title>
           </Head>
           <Body>{children}</Body>
         </Html>
