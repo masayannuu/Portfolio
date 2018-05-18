@@ -19,8 +19,6 @@ const StyledParagraph = styled.div`
 const StyledDiv = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
-    padding-right: 1.5em;
-    padding-left: 1.5em;
   }
   @media screen and (min-width: 769px) {
     width: 593px;
@@ -38,8 +36,6 @@ const StyledImage = styled(Image)`
   animation-duration: 1s;
   @media screen and (max-width: 768px) {
     width: 100%;
-    padding-right: 1.5em;
-    padding-left: 1.5em;
   }
   @media screen and (min-width: 769px) {
     width: 367px;
