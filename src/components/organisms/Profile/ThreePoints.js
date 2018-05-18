@@ -48,7 +48,7 @@ const StyledDl = styled.dl`
 
 const ThreePoints = () => (
   <StyledSection id="ThreePoints">
-    <SubHeading>3POINTS</SubHeading>
+    <SubHeading>3-CLUTURES</SubHeading>
     <div className="columns">
       <StyledDiv className="column">
         <InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated slideInLeft">

@@ -69,6 +69,9 @@ const Profile = () => (
             </p>
             <StyledHistoryDiv>
               <p>
+                <b>1993~ born in Hiroshima</b>
+              </p>
+              <p>
                 <b>2011~2014 add (Ba.)</b>
               </p>
               <p>

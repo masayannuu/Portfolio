@@ -30,12 +30,19 @@ const WrapDiv = styled.div`
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
   margin: 0 0 1em;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   align-items: center;
-  height: 593px;
+  @media screen and (max-width: 480px) {
+    flex-flow: row;
+    width: 100%
+    height: 200px;
+  }
+  @media screen and (min-width: 481px) {
+    flex-flow: column;
+    height: 593px;
+  }
 `
 
 const ContentDiv = styled.div`
@@ -63,11 +70,11 @@ const Sns = () => (
         />
       </StyledDiv>
       <StyledIconDiv className="column">
-        <WrapDiv>
-          <div id="contact">
-            <SubHeading>Contact</SubHeading>
-          </div>
-          <InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated rubberBand">
+        <div id="contact">
+          <SubHeading>Contact</SubHeading>
+        </div>
+        <InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated rubberBand">
+          <WrapDiv>
             <ContentDiv>
               <SocialIcon url="https://twitter.com/masayannu" color="black" />
             </ContentDiv>
@@ -80,8 +87,8 @@ const Sns = () => (
             <ContentDiv>
               <SocialIcon url="https://www.instagram.com/masayannuu/" color="black" />
             </ContentDiv>
-          </InViewMonitor>
-        </WrapDiv>
+          </WrapDiv>
+        </InViewMonitor>
       </StyledIconDiv>
     </div>
   </StyledSection>
