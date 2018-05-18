@@ -32,8 +32,6 @@ export default {
     meta.styleTags = sheet.getStyleElement()
     return html
   },
-  siteRoot: 'https://portfolio.masayannuu.com',
-  // basePath: '/',
   Document: class CustomHtml extends Component {
     render () {
       const {
