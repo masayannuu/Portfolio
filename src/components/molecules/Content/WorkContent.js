@@ -11,6 +11,8 @@ import ModalBody from '../Modal/ModalBody'
 const WrapDiv = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
   }
   @media screen and (min-width: 769px) {
     width: 593px;

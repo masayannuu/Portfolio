@@ -10,6 +10,8 @@ import Icon from '../../../../public/three-sibe-back.png'
 const StyledDiv = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
   }
   @media screen and (min-width: 769px) {
     width: 593px;
@@ -25,6 +27,8 @@ const StyledDiv = styled.div`
 const StyledImage = styled(Image)`
   @media screen and (max-width: 768px) {
     width: 100%;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
   }
   @media screen and (min-width: 769px) {
     position: -webkit-sticky;

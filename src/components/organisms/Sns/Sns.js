@@ -10,6 +10,8 @@ import StyledSection from '../../atoms/Section/StyledSection'
 const StyledDiv = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
   }
   @media screen and (min-width: 769px) {
     width: 593px;
@@ -20,6 +22,8 @@ const StyledIconDiv = styled.div`
   text-align: center;
   @media screen and (max-width: 768px) {
     width: 100%;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
   }
   @media screen and (min-width: 769px) {
     width: 367px;
@@ -37,6 +41,8 @@ const WrapDiv = styled.div`
   @media screen and (max-width: 768px) {
     flex-flow: row;
     width: 100%
+    padding-right: 1.5em;
+    padding-left: 1.5em;
     height: 200px;
   }
   @media screen and (min-width: 769px) {
