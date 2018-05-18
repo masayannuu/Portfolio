@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content WorkContent Molecules should render WorkContent 1`] = `
+<WorkContent__WrapDiv
+  className="columns"
+>
+  <div
+    className="column"
+  >
+    <WorkContent__StyledTitle
+      className="is-size-5 has-text-right"
+    >
+      File Transfer Service
+    </WorkContent__StyledTitle>
+    <WorkContent__StyledSubTitle
+      className="is-size-6 has-text-right"
+    >
+      ファイル転送サービス
+    </WorkContent__StyledSubTitle>
+    <div
+      className="tk-a-otf-gothic-bbb-pr6n"
+    >
+      <Modal
+        handleCloseModal={[Function]}
+        showModal={false}
+        title="File Transfer Service"
+      >
+        <ModalBody
+          description="この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字"
+          imageUrl="https://bulma.io/images/placeholders/1280x960.png"
+          isTag={false}
+          teamData={
+            Object {
+              "number": 3,
+              "roll": "設計・開発主担当",
+              "work": "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ",
+            }
+          }
+        />
+      </Modal>
+    </div>
+  </div>
+  <div
+    className="column"
+  >
+    <WorkContent__StyledImage
+      onClick={[Function]}
+      src="https://bulma.io/images/placeholders/1280x960.png"
+    />
+    <WorkContent__StyledDiv>
+      <ModalLink
+        onClick={[Function]}
+      />
+    </WorkContent__StyledDiv>
+  </div>
+</WorkContent__WrapDiv>
+`;

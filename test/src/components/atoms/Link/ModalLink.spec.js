@@ -1,6 +1,6 @@
 import React from 'react'
 import Enzyme from 'enzyme'
-import Adapter from 'enzyme-adapter-16'
+import Adapter from 'enzyme-adapter-react-16'
 import { shallowToJson } from 'enzyme-to-json'
 
 import ModalLink from '../../../../../src/components/atoms/Link/ModalLink'

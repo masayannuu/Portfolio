@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link ModalLink Atoms should render ModalLink 1`] = `
+<ModalLink__StyledField
+  grouped={true}
+  onClick={[Function]}
+>
+  <i
+    className="fa fa-angle-right"
+  />
+  Click & More
+</ModalLink__StyledField>
+`;

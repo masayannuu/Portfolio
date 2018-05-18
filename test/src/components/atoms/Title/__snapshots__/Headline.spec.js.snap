@@ -1,7 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading Headline Atoms should render Headline 1`] = `
-<Headline__StyledTitle>
-  Headline
-</Headline__StyledTitle>
+<InviewMonitor
+  childPropsNotInView={Object {}}
+  classNameInView="animated fadeInUp"
+  classNameNotInView="vis-hidden"
+  intoViewMargin="-20%"
+  useInviewMonitor={[Function]}
+>
+  <Headline__StyledTitle
+    className="is-size-3-mobile is-size-1-desktop is-size-1-tablet"
+  >
+    Headline
+  </Headline__StyledTitle>
+</InviewMonitor>
 `;

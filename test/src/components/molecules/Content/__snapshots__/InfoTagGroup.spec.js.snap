@@ -2,13 +2,12 @@
 
 exports[`Content InfoTagGroup Molecules should render InfoTagGroup 1`] = `
 <Field
-  className="is-grouped-multiline"
   grouped={true}
 >
-  <InfoTagGroup__StyledTitle>
+  <ParagrahTitle>
     Language
-  </InfoTagGroup__StyledTitle>
-  <InfoTagGroup__TagGroupField
+  </ParagrahTitle>
+  <Field
     className="is-grouped-multiline"
     grouped={true}
   >
@@ -52,6 +51,6 @@ exports[`Content InfoTagGroup Molecules should render InfoTagGroup 1`] = `
         C#
       </InfoTag>
     </Control>
-  </InfoTagGroup__TagGroupField>
+  </Field>
 </Field>
 `;
