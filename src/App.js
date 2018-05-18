@@ -26,7 +26,12 @@ injectGlobal`
    }
 
    .vis-hidden {
-    visibility: hidden;
+     @media screen and (max-width: 480px) {
+      transform: translateZ(0)
+     }
+     @media screen and (min-widht: 728px) {
+      visibility: hidden !important;
+     }
   }
 `
 
