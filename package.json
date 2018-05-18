@@ -21,11 +21,11 @@
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.5",
     "@fortawesome/fontawesome-free-solid": "^5.0.9",
+    "@kuroku/react-static-favicons": "^0.0.7",
     "firebase": "4.9.0",
     "mo-js": "^0.288.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-event-listener": "^0.5.3",
     "react-inview-monitor": "^2.2.0",
     "react-responsive": "^4.1.0",
     "react-router": "^4.2.0",
