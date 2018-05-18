@@ -8,20 +8,20 @@ import { Headline, SubHeading } from '../../atoms/Title/index'
 import StyledSection from '../../atoms/Section/StyledSection'
 
 const StyledDiv = styled.div`
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     width: 593px;
   }
 `
 
 const StyledIconDiv = styled.div`
   text-align: center;
-  @media screen and (max-width: 480px) {
-    width: 80%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     width: 367px;
   }
 `
@@ -34,12 +34,12 @@ const WrapDiv = styled.div`
   -ms-flex-pack: distribute;
   justify-content: space-around;
   align-items: center;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     flex-flow: row;
     width: 100%
     height: 200px;
   }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 769px) {
     flex-flow: column;
     height: 593px;
   }

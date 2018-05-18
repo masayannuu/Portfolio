@@ -9,10 +9,10 @@ import ModalLink from '../../atoms/Link/ModalLink'
 import ModalBody from '../Modal/ModalBody'
 
 const WrapDiv = styled.div`
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     width: 593px;
   }
 `

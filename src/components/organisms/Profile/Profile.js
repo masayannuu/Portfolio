@@ -17,7 +17,10 @@ const StyledParagraph = styled.div`
 `
 
 const StyledDiv = styled.div`
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 769px) {
     width: 593px;
   }
 `
@@ -31,10 +34,10 @@ const StyledImage = styled(Image)`
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   animation-duration: 1s;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     width: 367px;
     float: right;
   }
@@ -69,16 +72,16 @@ const Profile = () => (
             </p>
             <StyledHistoryDiv>
               <p>
-                <b>1993~ born in Hiroshima</b>
+                <b>~</b>
               </p>
               <p>
-                <b>2011~2014 add (Ba.)</b>
+                <b>2011~2014: add (Ba.)</b>
               </p>
               <p>
                 <b>
                   2013~
                   <StyledAnker href="http://usagibunnyboy.com/" target="_blank">
-                    usagibunnyboy(ウサギバニーボーイ)
+                    : usagibunnyboy(ウサギバニーボーイ)
                   </StyledAnker>
                   (Ba.)
                 </b>
@@ -87,7 +90,7 @@ const Profile = () => (
                 <b>
                   2015~
                   <StyledAnker href="http://hamee.co.jp/" target="_blank">
-                    Hamee inc
+                    : Hamee inc
                   </StyledAnker>
                   , EC shop marketing → Programer
                 </b>

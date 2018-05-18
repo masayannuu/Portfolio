@@ -8,10 +8,10 @@ import StyledSection from '../../atoms/Section/StyledSection'
 import Icon from '../../../../public/three-sibe-back.png'
 
 const StyledDiv = styled.div`
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     width: 593px;
   }
   font-feature-settings: 'palt';
@@ -23,10 +23,10 @@ const StyledDiv = styled.div`
 `
 
 const StyledImage = styled(Image)`
-  @media screen and (max-width: 480px) {
-    width: 80%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     position: -webkit-sticky;
     position: sticky;
     top: 50px;
