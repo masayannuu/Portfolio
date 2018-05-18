@@ -15,9 +15,9 @@ const StyledField = styled(Field)`
 
 const ModalLink = ({ onClick }) => (
   <StyledField grouped onClick={onClick}>
-    {/* <Icon> */}
-    <i className="fa fa-angle-right" />
-    {/* </Icon> */}
+    <Icon>
+      <i className="fa fa-angle-right" />
+    </Icon>
     Click & More
   </StyledField>
 )
