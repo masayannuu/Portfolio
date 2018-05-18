@@ -30,24 +30,25 @@ const WrapDiv = styled.div`
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0 1em;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   align-items: center;
   @media screen and (max-width: 768px) {
     flex-flow: row;
-    width: 100%
     height: 200px;
   }
   @media screen and (min-width: 769px) {
     flex-flow: column;
     height: 593px;
+    margin: 0 0 1em;
   }
 `
 
 const ContentDiv = styled.div`
   padding: 1em;
-  margin: 0.5em;
+  @media and screen (min-width: 769px) {
+    margin: 0.5em;
+  }
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   &:hover {
