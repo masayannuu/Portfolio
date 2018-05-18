@@ -29,9 +29,10 @@ injectGlobal`
      @media screen and (max-width: 480px) {
       transform: translateZ(0)
      }
-     @media screen and (min-widht: 728px) {
+     @media not screen and (max-widht: 480px) {
       visibility: hidden !important;
      }
+     visibility: hidden !important;
   }
 `
 
