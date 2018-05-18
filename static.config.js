@@ -32,12 +32,13 @@ export default {
     meta.styleTags = sheet.getStyleElement()
     return html
   },
+  siteRoot: 'https://portfolio.masayannuu.com',
+  // basePath: '/',
   Document: class CustomHtml extends Component {
     render () {
       const {
         Html, Head, Body, children, renderMeta
       } = this.props
-      console.log(renderMeta.faviconsElements)
       return (
         <Html>
           <Head>
