@@ -5,9 +5,6 @@ exports[`Link ModalLink Atoms should render ModalLink 1`] = `
   grouped={true}
   onClick={[Function]}
 >
-  <i
-    className="fa fa-angle-right"
-  />
-  Click & More
+  - Click & More
 </ModalLink__StyledField>
 `;
