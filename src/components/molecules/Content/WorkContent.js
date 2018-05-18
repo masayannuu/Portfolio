@@ -10,7 +10,7 @@ import ModalBody from '../Modal/ModalBody'
 
 const WrapDiv = styled.div`
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 95%;
   }
   @media screen and (min-width: 769px) {
     width: 593px;

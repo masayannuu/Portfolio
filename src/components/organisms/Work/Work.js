@@ -10,7 +10,7 @@ import FirebaseClient from '../../../../lib/Domain/FirebaseClient'
 
 const StyledImage = styled(Image)`
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 95%;
   }
   @media screen and (min-width: 769px) {
     position: -webkit-sticky;

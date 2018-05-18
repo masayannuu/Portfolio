@@ -9,7 +9,7 @@ import StyledSection from '../../atoms/Section/StyledSection'
 
 const StyledDiv = styled.div`
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 95%;
   }
   @media screen and (min-width: 769px) {
     width: 593px;
@@ -19,7 +19,7 @@ const StyledDiv = styled.div`
 const StyledIconDiv = styled.div`
   text-align: center;
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 95%;
   }
   @media screen and (min-width: 769px) {
     width: 367px;
@@ -36,7 +36,7 @@ const WrapDiv = styled.div`
   align-items: center;
   @media screen and (max-width: 768px) {
     flex-flow: row;
-    width: 100%
+    width: 95%
     height: 200px;
   }
   @media screen and (min-width: 769px) {

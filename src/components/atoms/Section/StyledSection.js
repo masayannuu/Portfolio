@@ -3,7 +3,7 @@ import { Section } from 'reactbulma'
 
 const StyledSection = styled(Section)`
   @media screen and (max-width: 480px) {
-    width: 100%;
+    width: 95%;
     margin-bottom: 150px;
   }
   @media screen and (min-width: 481px) {
