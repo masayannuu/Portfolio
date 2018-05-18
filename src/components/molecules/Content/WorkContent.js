@@ -81,9 +81,9 @@ class WorkContent extends React.Component {
         </div>
         <div className="column">
           <StyledImage src={this.state.content.image_url} onClick={this.handleOpenModal} />
-          {/* <StyledDiv> */}
-          <ModalLink onClick={this.handleOpenModal} />
-          {/* </StyledDiv> */}
+          <StyledDiv>
+            <ModalLink onClick={this.handleOpenModal} />
+          </StyledDiv>
         </div>
       </WrapDiv>
     )
