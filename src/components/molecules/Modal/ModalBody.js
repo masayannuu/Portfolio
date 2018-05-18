@@ -45,7 +45,11 @@ class ModalBody extends React.Component {
       <StyledDiv className="content">
         <Image src={this.state.imageUrl} />
         <h3>説明</h3>
-        <p>{this.state.description}</p>
+        <dl>
+          <dd>
+            <p>{this.state.description}</p>
+          </dd>
+        </dl>
         {infomationTag()}
         <h3>チームについて</h3>
         <dl>

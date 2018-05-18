@@ -7,14 +7,20 @@ import ParagraphTitle from '../../atoms/Paragraph/ParagraphTitle'
 
 const InfoTagGroup = ({ name, tags }) => (
   <Field grouped>
-    <ParagraphTitle>{name}</ParagraphTitle>
-    <Field grouped className="is-grouped-multiline">
-      {tags.map(tag => (
-        <Control key={tag}>
-          <InfoTag key={tag}>{tag}</InfoTag>
-        </Control>
-      ))}
-    </Field>
+    <dl>
+      <dt>
+        <ParagraphTitle>{name}</ParagraphTitle>
+      </dt>
+      <dd>
+        <Field grouped className="is-grouped-multiline">
+          {tags.map(tag => (
+            <Control key={tag}>
+              <InfoTag key={tag}>{tag}</InfoTag>
+            </Control>
+          ))}
+        </Field>
+      </dd>
+    </dl>
   </Field>
 )
 
