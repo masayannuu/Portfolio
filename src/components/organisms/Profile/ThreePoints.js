@@ -23,10 +23,10 @@ const StyledDiv = styled.div`
 `
 
 const StyledImage = styled(Image)`
-  @media screen and (min-width: 300px) {
+  @media screen and (max-width: 480px) {
     width: 80%;
   }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     position: -webkit-sticky;
     position: sticky;
     top: 50px;

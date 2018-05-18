@@ -8,20 +8,20 @@ import { Headline, SubHeading } from '../../atoms/Title/index'
 import StyledSection from '../../atoms/Section/StyledSection'
 
 const StyledDiv = styled.div`
-  @media screen and (min-width: 300px) {
+  @media screen and (max-width: 480px) {
     width: 100%;
   }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     width: 593px;
   }
 `
 
 const StyledIconDiv = styled.div`
   text-align: center;
-  @media screen and (min-width: 300px) {
+  @media screen and (max-width: 480px) {
     width: 80%;
   }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     width: 367px;
   }
 `
@@ -57,7 +57,7 @@ const Sns = () => (
         <Timeline
           dataSource={{
             sourceType: 'profile',
-            screenName: 'masayannu',
+            screenName: 'masayannu'
           }}
           options={{ height: 593 }}
         />

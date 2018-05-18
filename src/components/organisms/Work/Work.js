@@ -9,10 +9,10 @@ import WorkImage from '../../../../public/work-side.png'
 import FirebaseClient from '../../../../lib/Domain/FirebaseClient'
 
 const StyledImage = styled(Image)`
-  @media screen and (min-width: 300px) {
+  @media screen and (max-width: 480px) {
     width: 100%;
   }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     position: -webkit-sticky;
     position: sticky;
     top: 50px;

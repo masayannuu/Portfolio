@@ -29,7 +29,7 @@ injectGlobal`
      @media screen and (max-width: 1024px) {
       transform: translateZ(0)
      }
-     @media screen and (min-width: 1024px) {
+     @media screen and (min-width: 1025px) {
       visibility: hidden !important;
      }
   }
