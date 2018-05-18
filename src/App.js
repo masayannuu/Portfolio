@@ -26,10 +26,10 @@ injectGlobal`
    }
 
    .vis-hidden {
-     @media screen and (max-width: 480px) {
+     @media screen and (max-width: 1024px) {
       transform: translateZ(0)
      }
-     @media screen and (min-width: 480px) {
+     @media screen and (min-width: 1024px) {
       visibility: hidden !important;
      }
   }
