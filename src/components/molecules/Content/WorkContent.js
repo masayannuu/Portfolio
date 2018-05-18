@@ -102,8 +102,7 @@ WorkContent.propTypes = {
       roll: PropTypes.string,
       work: PropTypes.string
     }).isRequired
-  }).isRequired,
-  showModal: PropTypes.bool
+  }).isRequired
 }
 
 export default WorkContent
