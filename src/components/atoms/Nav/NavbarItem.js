@@ -11,15 +11,13 @@ const NavAnker = styled.a`
     text-decoration: underline;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 1s ease;
-    text-shadow: #057D9F 0px 0px 20px;
+    text-shadow: #057d9f 0px 0px 20px;
   }
 `
 
 const NavbarItem = ({ children, href }) => (
   <div className="navbar-item">
-    <p className="control">
-      <NavAnker href={href}>{children}</NavAnker>
-    </p>
+    <NavAnker href={href}>{children}</NavAnker>
   </div>
 )
 

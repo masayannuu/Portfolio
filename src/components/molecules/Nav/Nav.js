@@ -8,7 +8,6 @@ const NavMain = styled.nav`
 `
 
 const NavBar = styled.div`
-  width: 100%;
   background-color: #a2c4c7;
 `
 
