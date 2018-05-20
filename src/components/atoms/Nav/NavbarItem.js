@@ -16,9 +16,11 @@ const NavAnker = styled.a`
 `
 
 const NavbarItem = ({ children, href }) => (
-  <NavAnker className="navbar-item" href={href}>
-    <span>{children}</span>
-  </NavAnker>
+  <div className="navbar-item">
+    <NavAnker href={href}>
+      <span>{children}</span>
+    </NavAnker>
+  </div>
 )
 
 export default NavbarItem
