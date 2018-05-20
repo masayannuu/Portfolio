@@ -17,7 +17,7 @@ const NavAnker = styled.a`
 
 const NavbarItem = ({ children, href }) => (
   <NavAnker className="navbar-item" href={href}>
-    {children}
+    <span>{children}</span>
   </NavAnker>
 )
 
