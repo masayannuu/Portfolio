@@ -38,15 +38,13 @@ class Nav extends React.Component {
       <NavMain className="navbar is-fixed-top" aria-label="main navigation">
         <div className="navbar-brand">
           <div className="navbar-item">
-            <p className="control">
-              <NavTitle href="/">MASAYA MORIMOTO</NavTitle>
-            </p>
+            <NavTitle href="/">MASAYA MORIMOTO</NavTitle>
           </div>
           <div
             role="button"
             className={`navbar-burger ${this.state.isActive ? 'is-active' : ''}`}
             aria-label="menu"
-            aria-expanded="false"
+            aria-expanded={this.state.isActive}
             onClick={this.handleClickBurger}
             onKeyPress={this.handleClickBurger}
             tabIndex={0}
@@ -57,7 +55,11 @@ class Nav extends React.Component {
           </div>
         </div>
         <NavBar className={`navbar-menu ${this.state.isActive ? 'is-active' : ''}`}>
-          <div className="navbar-end">
+          <div
+            className="navbar-end"
+            onClick={this.handleClickBurger}
+            onKeyPress={this.handleClickBurger}
+          >
             <NavbarItem href="#profile">PROFILE</NavbarItem>
             <NavbarItem href="#work">WORK</NavbarItem>
             <NavbarItem href="#sns">SNS</NavbarItem>
