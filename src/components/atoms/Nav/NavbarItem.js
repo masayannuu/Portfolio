@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 const NavAnker = styled.a`
   color: #ffffff;
+  display: block;
+  width: 100%;
   font-feature-settings: 'palt';
   letter-spacing: 0.2em;
   font-size: 81.25%;

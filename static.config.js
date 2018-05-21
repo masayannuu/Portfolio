@@ -52,7 +52,7 @@ export default {
             {renderMeta.faviconsElements}
             <title>MASAYA MORIMOTO | PORTFOLIO</title>
           </Head>
-          <Body>{children}</Body>
+          <Body className="has-navbar-fixed-top">{children}</Body>
         </Html>
       )
     }
