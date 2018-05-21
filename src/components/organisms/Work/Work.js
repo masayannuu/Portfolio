@@ -19,6 +19,13 @@ const StyledImage = styled(Image)`
     width: 367px;
     height: 593px;
   }
+  @media screen and (min-width: 1408px) {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    height: 593px;
+  }
 `
 
 const StyledLoading = styled.div`

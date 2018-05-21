@@ -14,6 +14,9 @@ const StyledDiv = styled.div`
   @media screen and (min-width: 769px) {
     width: 593px;
   }
+  @media screen and (min-width: 1408px) {
+    width: 100%;
+  }
   font-feature-settings: 'palt';
   letter-spacing: 0.1em;
   -webkit-animation-duration: 2s;
@@ -31,6 +34,13 @@ const StyledImage = styled(Image)`
     position: sticky;
     top: 50px;
     width: 367px;
+    height: 593px;
+  }
+  @media screen and (min-width: 1408px) {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    width: 100%;
     height: 593px;
   }
 `

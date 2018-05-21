@@ -15,6 +15,9 @@ const WrapDiv = styled.div`
   @media screen and (min-width: 769px) {
     width: 593px;
   }
+  @media screen and (min-width: 1408px) {
+    width: 100%;
+  }
 `
 
 const StyledTitle = styled(ParagraphTitle)`
@@ -32,6 +35,12 @@ const StyledDiv = styled.div`
 const StyledImage = styled(Image)`
   &:hover {
     cursor: pointer;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1408px) {
+    width: 100%;
   }
 `
 

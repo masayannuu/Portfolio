@@ -7,7 +7,7 @@ const StyledSubTitle = styled(SubTitle)`
   letter-spacing: 0.05em;
 `
 const SubHeading = props => (
-  <StyledSubTitle className="is-size-4-mobile is-size-3-desktop is-size-3-tablet">
+  <StyledSubTitle className="is-size-4-mobile is-size-3-desktop is-size-3-tablet is-size-2-widescreen">
     {props.children}
   </StyledSubTitle>
 )

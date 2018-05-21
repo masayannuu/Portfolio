@@ -23,6 +23,9 @@ const StyledDiv = styled.div`
   @media screen and (min-width: 769px) {
     width: 593px;
   }
+  @media screen and (min-width: 1408px) {
+    width: 100%;
+  }
 `
 
 const StyledHistoryDiv = styled.div`
@@ -39,6 +42,10 @@ const StyledImage = styled(Image)`
   }
   @media screen and (min-width: 769px) {
     width: 367px;
+    float: right;
+  }
+  @media screen and (min-width: 1408px) {
+    width: 100%;
     float: right;
   }
 `
