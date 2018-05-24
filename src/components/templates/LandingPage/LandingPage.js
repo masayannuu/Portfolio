@@ -34,7 +34,7 @@ const LandingPage = () => (
       <Arrow targetY={1550} />
     </MediaQuery>
     <MediaQuery query="(max-width: 768px)">
-      <Arrow targetY={1400} />
+      <Arrow targetY={1500} />
     </MediaQuery>
     <ThreePoints />
     <Work />
