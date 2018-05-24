@@ -2,7 +2,7 @@
 
 exports[`Heading SubHeading Atoms should render SubHeading 1`] = `
 <SubHeading__StyledSubTitle
-  className="is-size-4-mobile is-size-3-desktop is-size-3-tablet"
+  className="is-size-4-mobile is-size-3-desktop is-size-3-tablet is-size-2-widescreen"
 >
   SubHeading
 </SubHeading__StyledSubTitle>

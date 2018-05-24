@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const line_option = {
   shape: 'line',
@@ -28,13 +29,20 @@ const head_option = {
 }
 
 export default class Arrow extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      targetY: props.targetY
+    }
+  }
+
   componentDidMount () {
     const mojs = require('mo-js')
     const element = document.querySelector('#arrow')
     const createLine = x =>
       new mojs.Shape({
         ...line_option,
-        y: 1400,
+        y: this.state.targetY,
         x,
         parent: element
       }).then({
@@ -45,7 +53,7 @@ export default class Arrow extends React.Component {
     const createHead = x =>
       new mojs.Shape({
         ...head_option,
-        y: 1400,
+        y: this.state.targetY,
         x,
         parent: element
       })
@@ -67,4 +75,8 @@ export default class Arrow extends React.Component {
   render () {
     return <div id="arrow" />
   }
+}
+
+Rain.prototypes = {
+  targetY: PropTypes.number
 }

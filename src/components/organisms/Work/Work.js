@@ -20,8 +20,8 @@ const StyledImage = styled(Image)`
     height: 593px;
   }
   @media screen and (min-width: 1408px) {
-    width: 100%;
-    position: -webkit-sticky;
+    width: 50%;
+    position: -ebkit-sticky;
     position: sticky;
     top: 50px;
     height: 593px;

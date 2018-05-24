@@ -12,10 +12,10 @@ const WrapDiv = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 769px) and (max-width: 1280px) {
     width: 593px;
   }
-  @media screen and (min-width: 1408px) {
+  @media screen and (min-width: 1281px) {
     width: 100%;
   }
 `
@@ -36,12 +36,7 @@ const StyledImage = styled(Image)`
   &:hover {
     cursor: pointer;
   }
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-  @media screen and (min-width: 1408px) {
-    width: 100%;
-  }
+  width: 100%;
 `
 
 class WorkContent extends React.Component {

@@ -13,7 +13,7 @@ const StyledParagraph = styled.div`
   -webkit-animation-duration: 2s;
   -moz-animation-duration: 2s;
   animation-duration: 2s;
-  font-size: 0.9em;
+  font-size: 1rem;
 `
 
 const StyledDiv = styled.div`
@@ -30,7 +30,7 @@ const StyledDiv = styled.div`
 
 const StyledHistoryDiv = styled.div`
   margin-top: 5em;
-  font-size: 0.8em;
+  font-size: 0.9rem;
 `
 
 const StyledImage = styled(Image)`
@@ -45,7 +45,7 @@ const StyledImage = styled(Image)`
     float: right;
   }
   @media screen and (min-width: 1408px) {
-    width: 100%;
+    width: 50%;
     float: right;
   }
 `

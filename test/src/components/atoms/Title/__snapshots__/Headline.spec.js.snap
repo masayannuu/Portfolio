@@ -9,7 +9,7 @@ exports[`Heading Headline Atoms should render Headline 1`] = `
   useInviewMonitor={[Function]}
 >
   <Headline__StyledTitle
-    className="is-size-3-mobile is-size-1-desktop is-size-1-tablet"
+    className="is-size-3-mobile is-size-1-desktop is-size-1-tablet is-size-1-widescreen"
   >
     Headline
   </Headline__StyledTitle>

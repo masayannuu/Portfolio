@@ -22,7 +22,7 @@ const StyledDiv = styled.div`
   -webkit-animation-duration: 2s;
   -moz-animation-duration: 2s;
   animation-duration: 2s;
-  font-size: 0.95em;
+  font-size: 1rem;
 `
 
 const StyledImage = styled(Image)`
@@ -40,7 +40,7 @@ const StyledImage = styled(Image)`
     position: -webkit-sticky;
     position: sticky;
     top: 50px;
-    width: 100%;
+    width: 50%;
     height: 593px;
   }
 `
