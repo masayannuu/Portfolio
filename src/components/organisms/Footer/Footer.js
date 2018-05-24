@@ -7,7 +7,7 @@ const StyledFooter = styled.footer`
 `
 
 const StyledDiv = styled.div`
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: #ffffff;
   font-feature-settings: 'palt';
   letter-spacing: 0.2em;
