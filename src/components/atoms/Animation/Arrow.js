@@ -77,6 +77,6 @@ export default class Arrow extends React.Component {
   }
 }
 
-Rain.prototypes = {
+Arrow.prototypes = {
   targetY: PropTypes.number
 }
