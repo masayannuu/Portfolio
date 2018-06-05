@@ -1,9 +1,27 @@
-# React-Static - Styled-Components Example
+# Portfolio
 
-This example includes:
-- Styled-Components
-- Image imports
-- File imports
-- Automatic Routing
+[MASAYA MORIMOTO](https://portfolio.masayannuu.com)  
 
-To get started, run `react-static create` and use the `styled-components` template.
+## Use  
+
+- [React Static](https://github.com/nozzle/react-static)
+- [React](https://github.com/facebook/react/)
+- [mojs](https://github.com/legomushroom/mojs)
+- [Styled-Components](https://github.com/styled-components/styled-components)
+- [Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/)
+
+## Develop  
+
+run deve server
+```
+$ yarn start
+```
+
+run storybook  
+```
+$ yarn storybook
+```  
+
+## License  
+
+MIT
