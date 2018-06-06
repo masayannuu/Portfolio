@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paragraph Paragraph Atoms should render Paragraph 1`] = `
+<dd>
+  <p
+    key="0"
+  >
+    testです
+  </p>
+  <p
+    key="1"
+  >
+    改行区切り
+  </p>
+</dd>
+`;

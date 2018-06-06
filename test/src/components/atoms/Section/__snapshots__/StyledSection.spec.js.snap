@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section StyledSection Atoms should render StyledSection 1`] = `
+<Section
+  className="StyledSection-bqFfPK fZFPUU"
+>
+  StyledSection
+</Section>
+`;

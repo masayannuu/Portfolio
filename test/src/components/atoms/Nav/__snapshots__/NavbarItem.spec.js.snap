@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav NavbarItem Atoms should render NavbarItem 1`] = `
+<div
+  className="navbar-item"
+>
+  <NavbarItem__NavAnker
+    href="hoge"
+  >
+    <span>
+      <p>
+        test
+      </p>
+    </span>
+  </NavbarItem__NavAnker>
+</div>
+`;
