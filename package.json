@@ -16,6 +16,10 @@
     "collectCoverage": true,
     "moduleNameMapper": {
       "\\.(css|scss)$": "<rootDir>/node_modules/jest-css-modules"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/test/setup.js",
+    "transform": {
+      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "<rootDir>/node_modules/jest-transform-stub"
     }
   },
   "dependencies": {
