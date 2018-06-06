@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LandingPage LandingPage Molecules should render LandingPage 1`] = `
+<div>
+  <Bubble />
+  <Head />
+  <MediaQuery
+    query="(min-width: 1701px)"
+    values={Object {}}
+  >
+    <Rain
+      isMobile={false}
+      targetY={900}
+    />
+  </MediaQuery>
+  <MediaQuery
+    query="(min-width: 1282px) and (max-width: 1700px)"
+    values={Object {}}
+  >
+    <Rain
+      isMobile={false}
+      targetY={800}
+    />
+  </MediaQuery>
+  <MediaQuery
+    query="(min-width: 769px) and (max-width: 1281px)"
+    values={Object {}}
+  >
+    <Rain
+      isMobile={false}
+      targetY={680}
+    />
+  </MediaQuery>
+  <MediaQuery
+    query="(max-width: 768px)"
+    values={Object {}}
+  >
+    <Rain
+      isMobile={true}
+      targetY={200}
+    />
+  </MediaQuery>
+  <Image
+    is="128x128"
+    src={
+      Object {
+        "process": [Function],
+      }
+    }
+  />
+  <Profile />
+  <MediaQuery
+    query="(min-width: 1701px)"
+    values={Object {}}
+  >
+    <Arrow
+      targetY={1700}
+    />
+  </MediaQuery>
+  <MediaQuery
+    query="(min-width: 1282px) and (max-width: 1700px)"
+    values={Object {}}
+  >
+    <Arrow
+      targetY={1600}
+    />
+  </MediaQuery>
+  <MediaQuery
+    query="(min-width: 769px) and (max-width: 1281px)"
+    values={Object {}}
+  >
+    <Arrow
+      targetY={1550}
+    />
+  </MediaQuery>
+  <MediaQuery
+    query="(max-width: 768px)"
+    values={Object {}}
+  >
+    <Arrow
+      targetY={1500}
+    />
+  </MediaQuery>
+  <ThreePoints />
+  <Work />
+  <Sns />
+  <Footer />
+</div>
+`;

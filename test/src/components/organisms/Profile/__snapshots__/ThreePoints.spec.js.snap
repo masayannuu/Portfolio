@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThreePoints ThreePoints Molecules should render ThreePoints 1`] = `
+<StyledSection
+  id="ThreePoints"
+>
+  <SubHeading>
+    3-CLUTURES
+  </SubHeading>
+  <div
+    className="columns"
+  >
+    <ThreePoints__StyledDiv
+      className="column"
+    >
+      <InviewMonitor
+        childPropsNotInView={Object {}}
+        classNameInView="animated slideInLeft"
+        classNameNotInView="vis-hidden"
+        intoViewMargin="-20%"
+        useInviewMonitor={[Function]}
+      >
+        <ThreePoints__StyledImage
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+        />
+      </InviewMonitor>
+    </ThreePoints__StyledDiv>
+    <ThreePoints__StyledDiv
+      className="column tk-a-otf-gothic-bbb-pr6n"
+    >
+      <InviewMonitor
+        childPropsNotInView={Object {}}
+        classNameInView="animated slideInUp"
+        classNameNotInView="vis-hidden"
+        intoViewMargin="-20%"
+        useInviewMonitor={[Function]}
+      >
+        <ThreePoints__StyledDl>
+          <dt>
+            <b>
+              1. 毎日読書をしている
+            </b>
+          </dt>
+          <dd>
+            本や論文は好奇心と知識の源。行動と思考を補助してくれる叡智。
+          </dd>
+          <dd>
+            漫画は
+            <ThreePoints__StyledAnker
+              href="https://ja.wikipedia.org/wiki/%E4%B9%9D%E4%BA%95%E8%AB%92%E5%AD%90"
+              target="_blank"
+            >
+              九井諒子先生
+            </ThreePoints__StyledAnker>
+            の「
+            <ThreePoints__StyledAnker
+              href="https://www.amazon.co.jp/dp/B00E59A03O/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1"
+              target="_blank"
+            >
+              ひきだしにテラリウム
+            </ThreePoints__StyledAnker>
+            」が好き。
+          </dd>
+        </ThreePoints__StyledDl>
+        <ThreePoints__StyledDl>
+          <dt>
+            <b>
+              2. 構造思考で学んでいる
+            </b>
+          </dt>
+          <dd>
+            システム思考フェチ。図解も好き。
+          </dd>
+          <dd>
+            幾何学な設計と、それが寂びていく風景も好き。
+          </dd>
+        </ThreePoints__StyledDl>
+        <ThreePoints__StyledDl>
+          <dt>
+            <b>
+              3. スノーボードが好き
+            </b>
+          </dt>
+          <dd>
+            10歳離れた兄とのコミュニケーション手段から始まり、見事にハマった。
+          </dd>
+          <dd>
+            オフシーズンも運動は習慣化している。(健康的)
+          </dd>
+        </ThreePoints__StyledDl>
+      </InviewMonitor>
+    </ThreePoints__StyledDiv>
+  </div>
+</StyledSection>
+`;

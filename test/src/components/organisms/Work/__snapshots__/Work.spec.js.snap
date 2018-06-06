@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Work Work Molecules should render Work 1`] = `
+<StyledSection
+  id="work"
+>
+  <Headline>
+    | WORK
+  </Headline>
+  <div
+    className="columns"
+  >
+    <div
+      className="column"
+    >
+      <Work__StyledImage
+        src={
+          Object {
+            "process": [Function],
+          }
+        }
+      />
+    </div>
+    <div
+      className="column"
+    >
+      <Work__StyledLoading>
+        Now Loading...
+      </Work__StyledLoading>
+    </div>
+  </div>
+</StyledSection>
+`;

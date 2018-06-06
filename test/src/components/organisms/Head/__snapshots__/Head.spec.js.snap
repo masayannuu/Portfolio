@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Head Head Molecules should render Head 1`] = `
+<Head__StyledDiv>
+  <Nav />
+  <Head__StyledImage
+    square="16by9"
+    src={
+      Object {
+        "process": [Function],
+      }
+    }
+  />
+</Head__StyledDiv>
+`;
