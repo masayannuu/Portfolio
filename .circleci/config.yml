@@ -2,18 +2,11 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:9.9
+      - image: node:latest
 
     working_directory: ~/repo
     steps:
       - checkout
-
-      - run:
-          name: Setup build tools
-          command:  |
-            npm config set user 0
-            npm config set unsafe-perm true
-            npm install -g netlify-cli
 
       - restore_cache:
           name: Restoring Cache - npm
@@ -35,19 +28,3 @@ jobs:
           name: Run Tests
           command: |
             yarn test
-
-      - run:
-          name: Build public files
-          command: |
-            echo "WIP"
-
-      - deploy:
-          name: Hosting Netlify
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              # echo \{\"site_id\":\"${MASTER_SITE_ID}\",\"path\":\"public\"\} >> .netlify
-              # /usr/local/lib/node_modules/netlify-cli/bin/cli.js deploy -t ${NETLIFY_TOKEN}
-              echo "WIP"
-            else
-              echo "Not master branch so not deploying"
-            fi
