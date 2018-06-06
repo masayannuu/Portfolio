@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sns Sns Molecules should render Sns 1`] = `
+<StyledSection
+  id="sns"
+>
+  <Headline>
+    | SNS
+  </Headline>
+  <div
+    className="columns"
+  >
+    <Sns__StyledDiv
+      className="column"
+    >
+      <Timeline
+        dataSource={
+          Object {
+            "screenName": "masayannu",
+            "sourceType": "profile",
+          }
+        }
+        onLoad={[Function]}
+        options={
+          Object {
+            "height": 593,
+          }
+        }
+      />
+    </Sns__StyledDiv>
+    <Sns__StyledIconDiv
+      className="column"
+    >
+      <div
+        id="contact"
+      >
+        <SubHeading>
+          Contact
+        </SubHeading>
+      </div>
+      <InviewMonitor
+        childPropsNotInView={Object {}}
+        classNameInView="animated rubberBand"
+        classNameNotInView="vis-hidden"
+        intoViewMargin="-20%"
+        useInviewMonitor={[Function]}
+      >
+        <Sns__WrapDiv>
+          <Sns__ContentDiv>
+            <SocialIcon
+              color="black"
+              url="https://twitter.com/masayannu"
+            />
+          </Sns__ContentDiv>
+          <Sns__ContentDiv>
+            <SocialIcon
+              color="black"
+              url="https://github.com/masayannuu"
+            />
+          </Sns__ContentDiv>
+          <Sns__ContentDiv>
+            <SocialIcon
+              color="black"
+              url="https://www.facebook.com/masaya.morimoto.18"
+            />
+          </Sns__ContentDiv>
+          <Sns__ContentDiv>
+            <SocialIcon
+              color="black"
+              url="https://www.instagram.com/masayannuu/"
+            />
+          </Sns__ContentDiv>
+        </Sns__WrapDiv>
+      </InviewMonitor>
+    </Sns__StyledIconDiv>
+  </div>
+</StyledSection>
+`;
