@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal ModalBody Molecules should render ModalBody 1`] = `
+<ModalBody__StyledDiv
+  className="content"
+>
+  <Image
+    src="https://bulma.io/images/placeholders/1280x960.png"
+  />
+  <h3>
+    説明
+  </h3>
+  <dl>
+    <Paragraph
+      text="この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字"
+    />
+  </dl>
+  <h3>
+    チームについて
+  </h3>
+  <dl>
+    <ModalBody__StyledDt>
+      人数
+    </ModalBody__StyledDt>
+    <dd>
+      3
+      人
+    </dd>
+    <ModalBody__StyledDt>
+      役割
+    </ModalBody__StyledDt>
+    <dd>
+      設計・開発主担当
+    </dd>
+    <ModalBody__StyledDt>
+      やったこと
+    </ModalBody__StyledDt>
+    <Paragraph
+      text="この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ"
+    />
+  </dl>
+</ModalBody__StyledDiv>
+`;

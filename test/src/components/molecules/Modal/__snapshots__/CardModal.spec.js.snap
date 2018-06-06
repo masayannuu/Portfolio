@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal CardModal Molecules should render CardModal 1`] = `
+<div
+  className="tk-a-otf-gothic-bbb-pr6n"
+>
+  <ModalLink
+    onClick={[Function]}
+  />
+  <Modal
+    handleCloseModal={[Function]}
+    showModal={false}
+    title="File Transfer Application"
+  >
+    <ModalBody
+      description="この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字"
+      imageUrl="https://bulma.io/images/placeholders/1280x960.png"
+      isTag={false}
+      teamData={
+        Object {
+          "number": 3,
+          "roll": "設計・開発主担当",
+          "work": "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ",
+        }
+      }
+    />
+  </Modal>
+</div>
+`;

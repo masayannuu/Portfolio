@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav Nav Molecules should render Nav 1`] = `
+<Nav__NavMain
+  aria-label="main navigation"
+  className="navbar is-fixed-top"
+>
+  <div
+    className="navbar-brand"
+  >
+    <div
+      className="navbar-item"
+    >
+      <Nav__NavTitle
+        href="/"
+      >
+        MASAYA MORIMOTO
+      </Nav__NavTitle>
+    </div>
+    <div
+      aria-expanded={false}
+      aria-label="menu"
+      className="navbar-burger "
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+      />
+      <span
+        aria-hidden="true"
+      />
+      <span
+        aria-hidden="true"
+      />
+    </div>
+  </div>
+  <Nav__NavBar
+    className="navbar-menu "
+  >
+    <div
+      className="navbar-end"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+    >
+      <NavbarItem
+        href="#profile"
+      >
+        PROFILE
+      </NavbarItem>
+      <NavbarItem
+        href="#work"
+      >
+        WORK
+      </NavbarItem>
+      <NavbarItem
+        href="#sns"
+      >
+        SNS
+      </NavbarItem>
+      <NavbarItem
+        href="#contact"
+      >
+        SAY HELLO
+      </NavbarItem>
+    </div>
+  </Nav__NavBar>
+</Nav__NavMain>
+`;

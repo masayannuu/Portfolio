@@ -2,10 +2,7 @@ import React from 'react'
 import Enzyme from 'enzyme'
 import { shallowToJson } from 'enzyme-to-json'
 
-import WorkContent from '../../../../../src/components/molecules/Content/WorkContent'
-
-const tags = ['Ruby', 'Js', 'java', 'C#']
-const info_tags = [{ name: 'Language', tags }, { name: 'SoftWare', tags }]
+import CardModal from '../../../../../src/components/molecules/Modal/CardModal'
 
 const description =
   'この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字'
@@ -17,18 +14,14 @@ const team_data = {
     'この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ'
 }
 
-const content = {
-  title: 'File Transfer Service',
-  sub_title: 'ファイル転送サービス',
-  image_url: 'https://bulma.io/images/placeholders/1280x960.png',
-  description,
-  team_data,
-  info_tags
-}
-
-describe('Content WorkContent Molecules', () => {
-  it('should render WorkContent', () => {
-    const wrapper = Enzyme.shallow(<WorkContent content={content} />)
+describe('Modal CardModal Molecules', () => {
+  it('should render CardModal', () => {
+    const wrapper = Enzyme.shallow(<CardModal
+      title="File Transfer Application"
+      imageUrl="https://bulma.io/images/placeholders/1280x960.png"
+      description={description}
+      teamData={team_data}
+      />)
     expect(shallowToJson(wrapper)).toMatchSnapshot()
   })
 })

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Modal Molecules should render Modal 1`] = `
+<div
+  className="modal is-active animated bounceInUp"
+>
+  <Modal__StyledBack
+    className="modal-background"
+  />
+  <div
+    className="modal-card"
+  >
+    <Modal__StyledHeader
+      className="modal-card-head"
+    >
+      <p
+        className="modal-card-title"
+      >
+        File Transfer Application
+      </p>
+      <Delete
+        as="div"
+        onClick={[Function]}
+      />
+    </Modal__StyledHeader>
+    <section
+      className="modal-card-body"
+    >
+      <div
+        className="content"
+      >
+        <p>
+          この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字
+        </p>
+      </div>
+    </section>
+    <Modal__StyledFooter
+      className="modal-card-foot"
+    >
+      <Button
+        as="button"
+        className="animated zoomInUp"
+        onClick={[Function]}
+        white={true}
+      >
+        Back
+      </Button>
+    </Modal__StyledFooter>
+  </div>
+</div>
+`;
