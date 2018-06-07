@@ -2,7 +2,7 @@ import React from 'react'
 import Enzyme from 'enzyme'
 import { shallowToJson } from 'enzyme-to-json'
 
-import ThreePoints from '../../../../../src/components/Organisms/Profile/ThreePoints'
+import ThreePoints from '../../../../../src/components/organisms/Profile/ThreePoints'
 
 describe('ThreePoints ThreePoints Molecules', () => {
   it('should render ThreePoints', () => {

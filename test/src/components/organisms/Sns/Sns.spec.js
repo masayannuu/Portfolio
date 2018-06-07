@@ -2,7 +2,7 @@ import React from 'react'
 import Enzyme from 'enzyme'
 import { shallowToJson } from 'enzyme-to-json'
 
-import Sns from '../../../../../src/components/Organisms/Sns/Sns'
+import Sns from '../../../../../src/components/organisms/Sns/Sns'
 
 describe('Sns Sns Molecules', () => {
   it('should render Sns', () => {

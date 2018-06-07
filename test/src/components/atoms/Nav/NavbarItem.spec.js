@@ -2,7 +2,7 @@ import React from 'react'
 import Enzyme from 'enzyme'
 import { shallowToJson } from 'enzyme-to-json'
 
-import NavbarItem from '../../../../../src/components/atoms/Nav/NavBarItem'
+import NavbarItem from '../../../../../src/components/atoms/Nav/NavbarItem'
 
 describe('Nav NavbarItem Atoms', () => {
   it('should render NavbarItem', () => {
