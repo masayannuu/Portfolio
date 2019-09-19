@@ -1,9 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Section StyledSection Atoms should render StyledSection 1`] = `
-<Section
-  className="StyledSection-sc-1np2dfe-0 hSowMw"
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "StyledSection-sc-1np2dfe-0",
+        "isStatic": true,
+        "rules": Array [
+          "@media screen and (max-width:480px){width:100%;margin-bottom:150px;}@media screen and (min-width:481px){width:90%;margin-left:auto;margin-right:auto;margin-bottom:229px;}",
+        ],
+      },
+      "displayName": "StyledSection",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "StyledSection-sc-1np2dfe-0",
+      "target": [Function],
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
 >
   StyledSection
-</Section>
+</StyledComponent>
 `;
