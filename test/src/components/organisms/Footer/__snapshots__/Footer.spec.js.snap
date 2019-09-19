@@ -13,7 +13,7 @@ exports[`Footer Footer Molecules should render Footer 1`] = `
       </p>
       <p>
          © 
-        2018
+        2019
          Masaya Morimoto
       </p>
     </Footer__StyledDiv>

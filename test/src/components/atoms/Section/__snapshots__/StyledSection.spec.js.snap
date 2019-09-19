@@ -2,7 +2,7 @@
 
 exports[`Section StyledSection Atoms should render StyledSection 1`] = `
 <Section
-  className="StyledSection-bqFfPK fZFPUU"
+  className="StyledSection-sc-1np2dfe-0 hSowMw"
 >
   StyledSection
 </Section>
