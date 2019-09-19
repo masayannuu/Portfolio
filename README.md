@@ -2,28 +2,29 @@
 
 # Portfolio
 
-[MASAYA MORIMOTO](https://portfolio.masayannuu.com)  
+[MASAYA MORIMOTO](https://portfolio.masayannuu.com)
 
-## Use  
+## Use
 
 - [React Static](https://github.com/nozzle/react-static)
 - [React](https://github.com/facebook/react/)
 - [mojs](https://github.com/legomushroom/mojs)
 - [Styled-Components](https://github.com/styled-components/styled-components)
 - [Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/)
+- [Netlify](https://www.netlify.com)
 
-## Develop  
+## Develop
 
 run deve server
 ```
 $ yarn start
 ```
 
-run storybook  
+run storybook
 ```
 $ yarn storybook
-```  
+```
 
-## License  
+## License
 
 MIT
