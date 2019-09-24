@@ -69,7 +69,7 @@ exports[`ThreePoints ThreePoints Molecules should render ThreePoints 1`] = `
         <ThreePoints__StyledDl>
           <dt>
             <b>
-              2. 構造思考で学んでいる
+              2. 構造思考で見つめる
             </b>
           </dt>
           <dd>
@@ -89,7 +89,7 @@ exports[`ThreePoints ThreePoints Molecules should render ThreePoints 1`] = `
             10歳離れた兄とのコミュニケーション手段から始まり、見事にハマった。
           </dd>
           <dd>
-            オフシーズンも運動は習慣化している。(健康的)
+            バックカントリーで見た蔵王山の樹氷に心打たれている。
           </dd>
         </ThreePoints__StyledDl>
       </InviewMonitor>

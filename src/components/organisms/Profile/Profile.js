@@ -75,18 +75,18 @@ const Profile = () => (
               年間3,500億円以上の受注・在庫連携を扱うECプラットフォーム上で、システム設計の上流から実装・運用の下流まで幅広く実践と経験を積む。
             </p>
             <p>
+              2018年から社長直下の新規事業開発に参画しIoT製品を開発しリリース。現在はサーバTのリーダーとして新規開発を担当。
+            </p>
+            <p>
               プログラムでもビジネススキームでも美しい構造にフェチる。自分で創れるようになるべくして行動中。何かと夢中になる事が多く、マイペースとよく言われる。
             </p>
             <StyledHistoryDiv>
               <p>
-                <b>~</b>
-              </p>
-              <p>
-                <b>2011~2014: add (Ba.)</b>
+                <b>2011~2015: add (Ba.)</b>
               </p>
               <p>
                 <b>
-                  2013~
+                  2013~2015
                   <StyledAnker href="http://usagibunnyboy.com/" target="_blank">
                     : usagibunnyboy(ウサギバニーボーイ)
                   </StyledAnker>
@@ -99,7 +99,16 @@ const Profile = () => (
                   <StyledAnker href="http://hamee.co.jp/" target="_blank">
                     : Hamee inc
                   </StyledAnker>
-                  , EC shop marketing → Programer
+                  , EC marketing → ECプラットフォーム Programer
+                </b>
+              </p>
+              <p>
+                <b>
+                  2018~
+                  <StyledAnker href="http://hamee.co.jp/" target="_blank">
+                    : Hamee inc
+                  </StyledAnker>
+                  , IoT部 Programer
                 </b>
               </p>
             </StyledHistoryDiv>

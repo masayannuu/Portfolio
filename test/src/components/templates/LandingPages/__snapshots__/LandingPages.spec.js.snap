@@ -6,7 +6,6 @@ exports[`LandingPage LandingPage Molecules should render LandingPage 1`] = `
   <Head />
   <MediaQuery
     query="(min-width: 1701px)"
-    values={Object {}}
   >
     <Rain
       isMobile={false}
@@ -15,7 +14,6 @@ exports[`LandingPage LandingPage Molecules should render LandingPage 1`] = `
   </MediaQuery>
   <MediaQuery
     query="(min-width: 1282px) and (max-width: 1700px)"
-    values={Object {}}
   >
     <Rain
       isMobile={false}
@@ -24,7 +22,6 @@ exports[`LandingPage LandingPage Molecules should render LandingPage 1`] = `
   </MediaQuery>
   <MediaQuery
     query="(min-width: 769px) and (max-width: 1281px)"
-    values={Object {}}
   >
     <Rain
       isMobile={false}
@@ -33,7 +30,6 @@ exports[`LandingPage LandingPage Molecules should render LandingPage 1`] = `
   </MediaQuery>
   <MediaQuery
     query="(max-width: 768px)"
-    values={Object {}}
   >
     <Rain
       isMobile={true}
@@ -51,7 +47,6 @@ exports[`LandingPage LandingPage Molecules should render LandingPage 1`] = `
   <Profile />
   <MediaQuery
     query="(min-width: 1701px)"
-    values={Object {}}
   >
     <Arrow
       targetY={1700}
@@ -59,7 +54,6 @@ exports[`LandingPage LandingPage Molecules should render LandingPage 1`] = `
   </MediaQuery>
   <MediaQuery
     query="(min-width: 1282px) and (max-width: 1700px)"
-    values={Object {}}
   >
     <Arrow
       targetY={1600}
@@ -67,7 +61,6 @@ exports[`LandingPage LandingPage Molecules should render LandingPage 1`] = `
   </MediaQuery>
   <MediaQuery
     query="(min-width: 769px) and (max-width: 1281px)"
-    values={Object {}}
   >
     <Arrow
       targetY={1550}
@@ -75,7 +68,6 @@ exports[`LandingPage LandingPage Molecules should render LandingPage 1`] = `
   </MediaQuery>
   <MediaQuery
     query="(max-width: 768px)"
-    values={Object {}}
   >
     <Arrow
       targetY={1500}
