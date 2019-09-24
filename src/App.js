@@ -1,10 +1,10 @@
 import React from 'react'
-import { injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import { hot } from 'react-hot-loader'
 
 import LandingPage from './containers/LandingPage'
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   body {
     font-weight: 300;
     font-size: 16px;
@@ -35,6 +35,11 @@ injectGlobal`
   }
 `
 
-const App = () => <LandingPage />
+const App = () => (
+  <div>
+    <GlobalStyle />
+    <LandingPage />
+  </div>
+)
 
 export default hot(module)(App)

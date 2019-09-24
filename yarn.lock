@@ -12937,6 +12937,18 @@ react-social-icons@^4.1.0:
   dependencies:
     prop-types "^15.6.2"
 
+react-static-plugin-favicons@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-static-plugin-favicons/-/react-static-plugin-favicons-2.0.0.tgz#7293979cd7d3b6a5c55e0b3fa1b188e0e0f5c45f"
+  integrity sha512-1G3KbOvqbDaN1aIYEA7f2XqL3oD3qjCZTgLm+UeaxUb0hJ457V1A1RIf1y/PFrKR2LVHkJvN2QrXI1I6QBujjA==
+  dependencies:
+    "@kuroku/react-static-favicons" "^0.0.7"
+
+react-static-plugin-styled-components@^7.2.2:
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/react-static-plugin-styled-components/-/react-static-plugin-styled-components-7.2.2.tgz#17b71a448780005e1f5fbb0432a440d994144b5d"
+  integrity sha512-yjZ2V5b4HLRs6ldbLmreXpXBiNU5y4IByPID/rYWe3J8NFenPMI7kbhiFlBDkUDEhJvGIpSFw3I8OCvAcm4yQg==
+
 react-static@^7.2.2:
   version "7.2.2"
   resolved "https://registry.yarnpkg.com/react-static/-/react-static-7.2.2.tgz#09c43fd73d0c4201a3d21d8d1609d6afd578447a"
